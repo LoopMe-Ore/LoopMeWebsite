@@ -1,15 +1,16 @@
 import React, { useRef }  from 'react';
 import HeaderTwo from '../../header/HeaderTwo';
 import Home from './Home';
-import Section2Area from './Section2Area'
-import Section3Area from './Section3Area'
+import Section2Area from './Section2Area';
+import Section3Area from './Section3Area';
 import LpOverview from './LpOverview';
-import MeetTheTeam from './MeetTheTeam'
-import LoopWe from './LoopWe'
-import Benefits from './Benefits'
-import ContactUs from './ContactUs'
-import Hiring from './Hiring'
+import MeetTheTeam from './MeetTheTeam';
+import LoopWe from './LoopWe';
+import Benefits from './Benefits';
+import ContactUs from './ContactUs';
+import Hiring from './Hiring';
 import Footer from '../../footer/Footer';
+
 
 
 function IndexTwo(){
@@ -19,10 +20,13 @@ function IndexTwo(){
     const benefitsRef = useRef(null); //represents benefits
     const contactRef = useRef(null); //represents contact
 
-	return(
+	return(  
     
         <>
         {/* header-area */}
+
+        {/* <img src={process.env.PUBLIC_URL + "/Benefits_UK.png"} /> */}
+
         <HeaderTwo aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
 
         <main>
