@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+// import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import HomeTwo from './pages/homes/HomeTwo';
 import React, { useEffect, useState } from 'react';
 // import Lottie from 'react-lottie';
