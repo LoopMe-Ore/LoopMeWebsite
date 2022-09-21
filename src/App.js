@@ -1,4 +1,4 @@
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import HomeTwo from './pages/homes/HomeTwo';
 import React, { useEffect, useState } from 'react';
 // import Lottie from 'react-lottie';
@@ -36,13 +36,16 @@ function App() {
         width={1400}
       />
      : */}
-{/* 
-     <Router>
-        <Routes>
-          <Route basename={process.env.PUBLIC_URL} exact path="/" element={<HomeTwo/>}/>
-        </Routes>
+
+     {/* <Router> */}
+        {/* <Routes>  */}
+          {/* <Route basename={process.env.PUBLIC_URL} exact path="/" element={ */}
+
+          <HomeTwo/>
+          
+            {/* }/> */}
+        {/* </Routes>
     </Router> */}
-      <HomeTwo/>
 
     </div>
   );

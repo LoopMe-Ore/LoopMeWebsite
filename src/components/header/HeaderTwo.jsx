@@ -7,6 +7,7 @@ import lottie from 'lottie-web';
 
 
 
+
 export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefitsRef={benefitsRef}, contactRef={contactRef}}) {
 
   const container = useRef(null);
