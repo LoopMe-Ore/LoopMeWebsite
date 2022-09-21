@@ -1,0 +1,489 @@
+
+
+/* Responsive !!! */
+
+
+/* For extremely small screen devices (595px and below) */
+/* @media only screen and (max-width: 595px) {
+
+:root {
+
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+
+
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+
+
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+
+
+} */
+
+
+
+ /* Extra large devices (large desktops, 1800px and up) */
+/* @media (max-width:1800px){ */
+
+/* .App{ */
+        /* display: none; */
+    /* } */
+
+    /* .container-full-padding,.s-container-full-padding{
+        padding:0 60px
+    }
+    .slider-img{
+        right:40px
+    }
+    .slider-img.slider-img2{
+        right:210px
+    }
+    .slider-active .slick-next{
+        right:0;
+        left:auto
+    } */
+/* } */
+
+/* Extra large devices (large desktops, 1500px and up) */
+@media (max-width:1500px){
+    .container-full-padding,.s-container-full-padding{
+        padding:0 30px
+    }
+    .slider-bg{
+        padding:180px 0
+    }
+    .slider-style-two{
+        padding:250px 0 150px
+    }
+    .slider-img img{
+        width:400px
+    }
+    .slider-img.slider-img2 img{
+        width:480px
+    }
+    .slider-circle-shape img{
+        width:650px
+    }
+    .slider-circle-shape{
+        right:310px
+    }
+    .slider-img{
+        right:20px
+    }
+    .slider-img.slider-img2{
+        right:165px
+    }
+    .header-bottom-bg{
+        width:100%;
+        background-position:center
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width:1199.98px){
+    .social-link{
+        display:none
+    }
+    .video-blog-content .title{
+        font-size:16px;
+        padding-right:0
+    }
+    .container-full-padding,.s-container-full-padding{
+        padding:0 15px
+    }
+    .slider-bg{
+        padding:180px 0
+    }
+    .navbar-wrap ul li a{
+        font-size:12px;
+        padding:40px 20px
+    }
+    .about-content{
+        padding-right:0
+    }
+    .menu-style-two{
+        padding:28px 0;
+        border-radius:0;
+        background-image:none
+    }
+    .menu-style-two{
+        padding:10px 0!important;
+        border-radius:0;
+        background-image:none
+    }
+    .slider-img.slider-img2{
+        display:none
+    }
+    .slider-style-two .slider-content h2{
+        font-size:75px
+    }
+    .slider-style-two .slider-content p{
+        width:90%
+    }
+    .slider-style-two{
+        padding:250px 0 150px
+    }
+    .slider-circle-shape{
+        right:170px;
+        bottom:50px
+    }
+    .slider-circle-shape img{
+        width:600px
+    }
+    .team-member-content h4{
+        font-size:18px
+    }
+    .overview-list-content{
+        padding-right:25px;
+        margin-right:25px
+    }
+    .overview-list-content h4{
+        font-size:14px
+    }
+    .overview-list-content span{
+        font-size:12px
+    }
+    .community-widget{
+        padding:35px 20px
+    }
+    .contact-area .row [class*=col-]:last-child.pl-45{
+        padding-left:15px
+    }
+    .slider-style-two .slider-content h2{
+        font-size:64px
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (max-width:991.98px){
+    .mobile-menu .navigation li>a{
+        color:#fff;
+        background:linear-gradient(180deg,#ff362b 0,#ff6868 100%);
+        border:2px solid #ff8282;
+        border-radius:36px;
+        margin:10px
+    }
+    .mobile-menu .close-btn{
+        color:#fff
+    }
+    .mobile-menu .social-links li a{
+        color:#fff
+    }
+    .spaceBG{
+        background-image:none;
+        background-color:transparent
+    }
+    .wwloopers-bg{
+        background-image:url(../img/images/Mobile/mobile_bg_wwLoopers.png)
+    }
+    .spinningEarth{
+        width:60%
+    }
+    .lp_video_bg{
+        height:28%
+    }
+    .video_curve{
+        width:90%
+    }
+    .main-menu .navbar-wrap{
+        display:none!important
+    }
+    .viewjobsbtn{
+        display:none!important
+    }
+    .mobile-menu .navigation li>a:hover{
+        color:#eaa62c
+    }
+    .mobile-menu .navbar-wrap{
+        display:block!important
+    }
+    .main-menu .navbar-wrap{
+        display:none!important
+    }
+    .container-full-padding,.s-container-full-padding{
+        padding:0 30px
+    }
+    .menu-area .mobile-nav-toggler{
+        display:block
+    }
+    .header-top-right{
+        justify-content:center;
+        padding:10px 0
+    }
+    .main-header,.main-header.sticky-menu{
+        padding:25px 0 10px
+    }
+    .main-menu nav{
+        justify-content:space-between
+    }
+    .header-action{
+        margin-right:80px
+    }
+    .slider-content h2{
+        font-size:82px
+    }
+    .slider-content p{
+        width:90%
+    }
+    .about-img{
+        margin-bottom:50px
+    }
+    .slider-bg{
+        padding:180px 0
+    }
+    .navbar-wrap ul li a{
+        font-size:12px;
+        padding:40px 20px
+    }
+    .about-content{
+        padding-right:0
+    }
+    .slider-img{
+        display:none
+    }
+    .transparent-header{
+        padding:0 0 10px;
+        top:0
+    }
+    .menu-style-two{
+        padding:0
+    }
+    .slider-style-two{
+        padding:240px 0 150px;
+        text-align:center
+    }
+    .slider-circle-shape{
+        right:70px
+    }
+    .slider-style-two .slider-content p{
+        width:80%;
+        margin:0 auto 45px
+    }
+    .slider-style-two .row{
+        justify-content:center
+    }
+    .team-member-content h4{
+        font-size:20px
+    }
+    #contact-map{
+        margin-bottom:50px
+    }
+    .overview-list-content h4{
+        font-size:16px
+    }
+    .overview-list-content span{
+        font-size:14px
+    }
+    .overview-list-content{
+        padding-right:50px;
+        margin-right:30px
+    }
+    .community-widget{
+        padding:35px
+    }
+    .header-bottom-bg{
+        display:none
+    }
+    .footer-widget.text-right{
+        text-align:left!important
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+/* Iphone 12 Pro */
+@media (max-width:767.98px){
+    .social-link{
+        display:none
+    }
+    .slider-style-two{
+        background-image:none
+    }
+    .slider-bg{
+        background-image:none
+    }
+    .slider-area{
+        background-image:url(../img/images/Mobile/1_background_Mobile.png)
+    }
+    .container-full-padding{
+        top:0
+    }
+    .header-top-right{
+        justify-content:center;
+        padding:10px 0
+    }
+    .main-header,.main-header.sticky-menu{
+        padding:15px 0 20px
+    }
+    .main-menu nav{
+        justify-content:space-between
+    }
+    .logo{
+        align-self:flex-start
+    }
+    #lpLogo{
+        width:50%;
+        position:absolute;
+        left:0
+    }
+    .mobile-menu{
+        width:80%;
+        height:90%
+    }
+    .mobile-menu .menu-box{
+        background:rgba(255,255,255,.2);
+        backdrop-filter:blur(16px);
+        border-radius:16px
+    }
+    .social-links{
+        display:none!important
+    }
+    .header-action{
+        display:none
+    }
+    .slider-content h6{
+        font-size:16px
+    }
+    .slider-content h6::before{
+        border-width:5px 90px 5px 0
+    }
+    .slider-content h6::after{
+        border-width:5px 0 5px 90px
+    }
+    .slider-content h2{
+        font-size:60px
+    }
+    .slider-content p{
+        width:100%;
+        font-size:16px;
+        font-weight:500
+    }
+    .about-img{
+        margin-bottom:50px
+    }
+    .slider-bg{
+        padding:120px 0
+    }
+    .about-content{
+        padding-right:0
+    }
+    .blog-style-one{
+        display:block
+    }
+    .slider-style-two .slider-content h2{
+        font-size:45px;
+        line-height:1
+    }
+    .slider-style-two{
+        padding:205px 0 120px
+    }
+    .slider-style-two .slider-content p{
+        width:100%
+    }
+    .overview-list-content{
+        padding-right:0;
+        margin-right:0;
+        margin-bottom:5px
+    }
+    .overview-list-content::before{
+        display:none
+    }
+    .community-widget{
+        padding:35px 20px
+    }
+    .team-one img{
+        max-width:70px
+    }
+    .team-bg{
+        overflow:hidden
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width:576px) and (max-width:767px){
+    .social-link{
+        display:none!important
+    }
+    .video-blog-content .title{
+        font-size:18px
+    }
+    .header-action{
+        display:block
+    }
+    #search-modal .modal-dialog .modal-content form{
+        width:470px
+    }
+    .slider-style-two .slider-content h2{
+        font-size:70px
+    }
+    .slider-style-two .slider-content p{
+        width:95%
+    }
+    .community-widget{
+        padding:35px
+    }
+    .team-one img{
+        max-width:unset
+    }
+}
+
+/* Smallest */
+@media screen and (max-width:414px){
+    .navbar-wrap{
+        display:flex!important
+    }
+    .navbar-wrap ul{
+        display:block;
+        position:absolute;
+        width:300px;
+        background:#333;
+        top:-28px;
+        z-index:99;
+        right:0
+    }
+    .social-link{
+        display:none!important
+    }
+    .title-style-three h2{
+        font-size:40px
+    }
+    .carousel_meettheteam>.items_mtt{
+        width:80%
+    }
+    .LpWe_dots{
+        flex-direction:row;
+        right:100%!important;
+        left:0;
+        height:10%;
+        top:85%
+    }
+    .dot_text{
+        display:none
+    }
+    .lpWe_text{
+        width:100%
+    }
+    .mySlides{
+        width:100%
+    }
+    .SlideShowImg{
+        top:43%;
+        bottom:100%;
+        position:absolute;
+        left:0
+    }
+} 
