@@ -1,52 +1,45 @@
 // import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import HomeTwo from './pages/homes/HomeTwo';
-import React, { useEffect, useState } from 'react';
-// import Lottie from 'react-lottie';
+import React, { useEffect, useState, useRef } from 'react';
+import lottie from 'lottie-web';
 
 
 function App() {
 
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice"
-  //   }
-  // };
-  
+  const container = useRef(null);
   const [loading,setLoading] = useState(false);
 
-  // useEffect(()=>{
-  //   setLoading(true)
-  //     setTimeout(()=>{
-  //       setLoading(false)
-  //       },3000)
-  // },[])
+  useEffect(()=>{
+
+    lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: false,
+      autoplay: true,
+      animationData: require("./Drawing_Logo_white.json")
+    });
+
+
+    setLoading(true)
+      setTimeout(()=>{
+        setLoading(false)
+        },10000)
+  },[])
 
 
 
   return (
     <div className="App">
 
-      {/* {loading ? 
-      <Lottie 
-	    options={defaultOptions}
-        height={418}
-        width={1400}
-      />
-     : */}
-
-     {/* <Router> */}
-        {/* <Routes>  */}
-          {/* <Route basename={process.env.PUBLIC_URL} exact path="/" element={ */}
-
+      {loading ? 
+        <div className="logoLoading" 
+          ref={container}
+          >
+        </div>
+     :
           <HomeTwo/>
-          
-            {/* }/> */}
-        {/* </Routes>
-    </Router> */}
-
+      }
+      
     </div>
   );
 }

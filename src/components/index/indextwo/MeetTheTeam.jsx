@@ -195,23 +195,23 @@ function MeetTheTeam() {
 				
 					<div className="carousel_meettheteam">
 						
-						<img alt="a pic" className="items_mtt main-pos" id="1" loading="eager" src="assets/img/images/Gallery/File1.png"  />
+						<img alt="a pic" className="items_mtt main-pos" id="1" loading="eager" src={process.env.PUBLIC_URL + "/assets/img/images/Gallery/File1.png"}  />
 
-						<img alt="a pic" className="items_mtt right-pos" id="2" loading="eager" src="assets/img/images/Gallery/File2.png"  />
+						<img alt="a pic" className="items_mtt right-pos" id="2" loading="eager" src={process.env.PUBLIC_URL + "/assets/img/images/Gallery/File2.png"}  />
 
-						<img alt="a pic" className="items_mtt back-pos" id="3" loading="lazy" src="assets/img/images/Gallery/File3.png"  />
+						<img alt="a pic" className="items_mtt back-pos" id="3" loading="lazy" src={process.env.PUBLIC_URL + "/assets/img/images/Gallery/File3.png"}  />
 
-						<img alt="a pic" className="items_mtt back-pos" id="4" loading="lazy" src="assets/img/images/Gallery/File4.png"  />	
+						<img alt="a pic" className="items_mtt back-pos" id="4" loading="lazy" src={process.env.PUBLIC_URL + "/assets/img/images/Gallery/File4.png"}  />	
 
-						<img alt="a pic" className="items_mtt back-pos" id="5" loading="lazy" src="assets/img/images/Gallery/File5.png"  />						
+						<img alt="a pic" className="items_mtt back-pos" id="5" loading="lazy" src={process.env.PUBLIC_URL + "/assets/img/images/Gallery/File5.png"}  />						
 
-						<img alt="a pic" className="items_mtt back-pos" id="6" loading="lazy" src="assets/img/images/Gallery/File6.png"  />						
+						<img alt="a pic" className="items_mtt back-pos" id="6" loading="lazy" src={process.env.PUBLIC_URL + "/assets/img/images/Gallery/File6.png"}  />						
 
-						<img alt="a pic" className="items_mtt back-pos" id="7" loading="lazy" src="assets/img/images/Gallery/File7.png"  />						
+						<img alt="a pic" className="items_mtt back-pos" id="7" loading="lazy" src={process.env.PUBLIC_URL + "/assets/img/images/Gallery/File7.png"}  />						
 
-						<img alt="a pic" className="items_mtt back-pos" id="8" loading="lazy" src="assets/img/images/Gallery/File8.png"  />						
+						<img alt="a pic" className="items_mtt back-pos" id="8" loading="lazy" src={process.env.PUBLIC_URL + "/assets/img/images/Gallery/File8.png"}  />						
 
-						<img alt="a pic" className="items_mtt left-pos" id="9" loading="eager" src="assets/img/images/Gallery/File9.png"  />						
+						<img alt="a pic" className="items_mtt left-pos" id="9" loading="eager" src={process.env.PUBLIC_URL + "/assets/img/images/Gallery/File9.png"}  />						
 
 					</div>
 {/* 

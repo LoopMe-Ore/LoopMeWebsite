@@ -24,7 +24,7 @@ function Section2Area({aboutRef={aboutRef}, initiativesRef={initiativesRef}, ben
                 </div>
               </div>
             </div>
-            <img className='bottomCurve' src="assets/img/bg/blackBtmCurve.png" alt="" />
+            <img className='bottomCurve' src={process.env.PUBLIC_URL + "/assets/img/bg/blackBtmCurve.png"} alt="" />
           </section>
   )
 }

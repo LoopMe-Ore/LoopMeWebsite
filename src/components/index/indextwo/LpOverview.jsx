@@ -21,13 +21,14 @@ function LpOverview() {
               <div className='video_div'>
                 
                 <div className='video_curve'>
-                  <video className='lp_video' controls poster='assets/video/video_placeholder.png'>
-                    <source className='lp_video_src' src="assets/video/LoopMe_video.mp4" type="video/mp4"></source>
+                {/* src={process.env.PUBLIC_URL + "/ */}
+                  <video className='lp_video' controls poster={process.env.PUBLIC_URL + "/assets/video/video_placeholder.png"}>
+                    <source className='lp_video_src' src={process.env.PUBLIC_URL + "/assets/video/LoopMe_video.mp4"} type="video/mp4"></source>
                   </video>
 
                 </div>
 
-                <img className='lp_video_bg' src="assets/video/Rectangle.png" alt="" />
+                <img className='lp_video_bg' src={process.env.PUBLIC_URL + "/assets/video/Rectangle.png"} alt="" />
               </div>
               
 
