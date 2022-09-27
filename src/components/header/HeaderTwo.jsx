@@ -33,6 +33,30 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
   }
 }
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+
+  var navlogo = document.getElementById("lp_logo");
+  if (navlogo.className === "active") {
+    navlogo.className += " logoRemove";
+  } else {
+    navlogo.className = "active";
+  }
+
+  // var openclosebtn = document.getElementById("openclosebtn");
+  // if (openclosebtn.className === "active") {
+  //   openclosebtn.className += " logoRemove";
+  // } else {
+  //   openclosebtn.className = "active";
+  // }
+
+
+}
   
   useEffect(()=>{
 
@@ -42,167 +66,73 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
       renderer: "svg",
       loop: false,
       autoplay: false,
-      animationData: require("../header/lotties/Hover_Logo.json")
+      animationData: require("../header/lotties/HoverJson.json")
     });
-
-    // //SubMenu Dropdown Toggle
-    //   if ($('.menu-area li.menu-item-has-children ul').length) {
-    //     $('.menu-area .navigation li.menu-item-has-children').append('<div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>');
-
-    //   }
-
-    //   //Mobile Nav Hide Show
-    //   if ($('.mobile-menu').length) {
-
-    //     var mobileMenuContent = $('.menu-area .push-menu').html();
-    //     $('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
-
-    //     //Dropdown Button
-    //     $('.mobile-menu li.menu-item-has-children .dropdown-btn').on('click', function () {
-    //       $(this).toggleClass('open');
-    //       $(this).prev('ul').slideToggle(500);
-    //     });
-
-
-    //     $('.menu-backdrop, .mobile-menu .close-btn').click (()=>{
-    //       $('body').removeClass('mobile-menu-visible');
-    //     })
-
-
-    //     //Menu Toggle Btn
-    //     $('.mobile-nav-toggler').on('click', function () {
-    //       $('body').addClass('mobile-menu-visible');
-    //     });
-    //   }
     
-      // Change to highlight hyperlink glow as scroll through pages
-      // https://alvarotrigo.com/blog/sticky-navbar/
+    // Change to highlight hyperlink glow as scroll through pages
+    // https://alvarotrigo.com/blog/sticky-navbar/
 
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("sticky-header").style.top = "0";
-          document.getElementById("social_links").style.opacity = "100";
-          // fade in out?
-          // document.getElementById("sticky-header").style.display = "flex";
-        } else {
-          document.getElementById("sticky-header").style.top = "-170px";
-          document.getElementById("social_links").style.opacity = "0";
-          // fade in out?
-          // document.getElementById("sticky-header").style.display = "none";
-        }
-        prevScrollpos = currentScrollPos;
-      }
+    // var prevScrollpos = window.pageYOffset;
+    // window.onscroll = function() {
+    //   var currentScrollPos = window.pageYOffset;
+    //   if (prevScrollpos > currentScrollPos) {
+    //     document.getElementById("header").style.top = "0";
+    //     // document.getElementById("social_links").style.opacity = "100";
+    //     // fade in out?
+    //     // document.getElementById("sticky-header").style.display = "flex";
+    //   } else {
+    //     document.getElementById("header").style.top = "-170px";
+    //     // document.getElementById("social_links").style.opacity = "0";
+    //     // fade in out?
+    //     // document.getElementById("sticky-header").style.display = "none";
+    //   }
+    //   prevScrollpos = currentScrollPos;
+    // }
 
 
-      return () => {
-        lottie.destroy();
-      };
+    return () => {
+      lottie.destroy();
+    };
+
+    
     
   },[])
+
+
   
   return (
-	 <header> 
+	    <header id='header' className="header"> 
 
-          <div id="sticky-header" className="transparent-header menu-area">
-            <div className="container-fluid s-container-full-padding">
-              <div className="row">
+        <nav>
+          <ul className="topnav" id="myTopnav">
 
-                <div className="col-12">
-
-                  <div className="mobile-nav-toggler two">
-                    {/* <i className="fas fa-th" /> */}
-                    <img id='mobileDropBtn' src="assets/img/icon/CircleMenuBtn.png" alt="Logo" />
-                  </div>
-
-                    <div className="main-menu  menu-style-two">
-                      <nav>
-                        <div className="logo logoLoopMe" 
-                            ref={container}
-                            onMouseEnter={() => handleHover("Enter")}
-                            onMouseLeave={() => handleHover("Leave")}>
-
-                        </div>
-
-                        <div className="navbar-wrap push-menu d-none d-lg-flex">
-                          <ul className="navigation">
-
-                            <li onClick={() => {handleScroll(aboutRef.current);}}><Link to="/">About</Link></li>
-                            <li onClick={() => {handleScroll(initiativesRef.current);}}><Link to="/">Our Initiatives</Link></li>
-                            <li onClick={() => {handleScroll(benefitsRef.current);}}><Link to="/">Benefits</Link></li>
-                            <li onClick={() => {handleScroll(contactRef.current);}}><Link to="/">Contact</Link></li>
-
-                          </ul>
-                        </div>
-                        
-                        <div className="viewjobsbtn" onClick={() => {handleScroll(contactRef.current);}}>
-                          {/* <img src={process.env.PUBLIC_URL + "/Benefits_UK.png"} /> */}
-                          
-                          <Link to="/"><img src={process.env.PUBLIC_URL + "/assets/img/icon/sm_viewjobsbtn_2.png"} alt="Logo" /></Link>
-                        </div>
-                        
-                      </nav>
-                    </div>
-                  
-                  {/* <div className="mobile-menu">
-                    <nav className="menu-box">
-                      <div className="close-btn"><i className="fas fa-times" /></div>
-                      <div className="nav-logo"><Link to="/"><img src="assets/img/logo/logo.png" alt="" title='true' /></Link>
-                      </div>
-                      <div className="menu-outer">
-                    
-                      </div>
-                      <div className="social-links">
-                        <ul className="clearfix">
-                          <li><a href="/#"><span className="fab fa-twitter" /></a></li>
-                          <li><a href="/#"><span className="fab fa-facebook-square" /></a></li>
-                          <li><a href="/#"><span className="fab fa-pinterest-p" /></a></li>
-                          <li><a href="/#"><span className="fab fa-instagram" /></a></li>
-                          <li><a href="/#"><span className="fab fa-youtube" /></a></li>
-                        </ul>
-                      </div>
-                    </nav>
-                  </div> */}
-
-                  <div className="menu-backdrop" />
-                  
+            <li className="active" id="lp_logo">
+              <div className="logo logoLoopMe" 
+                ref={container}
+                onMouseEnter={() => handleHover("Enter")}
+                onMouseLeave={() => handleHover("Leave")}>
               </div>
+            </li>
 
-              </div>
+            <li className="nav_option" onClick={() => {handleScroll(aboutRef.current);}}><Link to="/">About</Link></li>
+            <li className="nav_option" onClick={() => {handleScroll(initiativesRef.current);}}><Link to="/">Our Initiatives</Link></li>
+            <li className="nav_option" onClick={() => {handleScroll(benefitsRef.current);}}><Link to="/">Benefits</Link></li>
+            <li className="nav_option" onClick={() => {handleScroll(contactRef.current);}}><Link to="/">Contact</Link></li>
 
-            </div>
-          </div>
+            <li className="viewjobsbtn" onClick={() => {handleScroll(contactRef.current);}}>
+              <Link to="/"><img src={process.env.PUBLIC_URL + "/assets/img/icon/sm_viewjobsbtn_2.png"} alt="Logo" /></Link>
+            </li>
 
-          <div id="social_links" className="social-links">
+            <li className="icon" onClick={() => {myFunction();}}>
+              <img id="openclosebtn" src={process.env.PUBLIC_URL + "/assets/img/icon/CircleMenuBtn.png"} alt="Logo" />
+            </li>
 
-                  <a className="container_Social" href = "mailto: contact@loopme.com"> 
-                    <img className="social_img first" src={process.env.PUBLIC_URL + "/assets/img/icon/email.png"} alt="Email"></img> 
-                    <img className="social_img" src={process.env.PUBLIC_URL + "/assets/img/icon/email_red.png"} alt="Email"></img> 
-                  </a>
 
-                  <a className="container_Social" href="https://twitter.com/LoopMe?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer"><span className=""/>
-                    <img className = "social_img first" src={process.env.PUBLIC_URL + "/assets/img/icon/twitter_black.png"} alt=" Email " ></img>
-                    <img className = "social_img" src={process.env.PUBLIC_URL + "/assets/img/icon/twitter_blue.png"} alt=" Email " ></img>
-                  </a>
+          </ul>
+        </nav>
 
-                <a className="container_Social" href="https://www.linkedin.com/company/loopme/mycompany/" target="_blank" rel="noopener noreferrer"><span className=""/>
-                  <img className = "social_img first" src={process.env.PUBLIC_URL + "/assets/img/icon/linkedin_black.png"} alt=" Email " ></img>
-                  <img className = "social_img" src={process.env.PUBLIC_URL + "/assets/img/icon/linkedin_blue.png"} alt=" Email " ></img>
-                </a>
 
-                <a className="container_Social" href="https://www.instagram.com/instaloopme/" target="_blank" rel="noopener noreferrer"><span className=""/>
-                  <img className = "social_img first" src={process.env.PUBLIC_URL + "/assets/img/icon/instagram_black.png"} alt=" Email " ></img>
-                  <img className = "social_img" src={process.env.PUBLIC_URL + "/assets/img/icon/instagram_insta.png"} alt=" Email " ></img>
-                </a>
-
-                <a className="container_Social" href="https://en-gb.facebook.com/LoopMeMedia/" target="_blank" rel="noopener noreferrer"><span className=""/>
-                  <img className = "social_img first" src={process.env.PUBLIC_URL + "/assets/img/icon/facebook_black.png"} alt="Email" ></img>
-                  <img className = "social_img" src={process.env.PUBLIC_URL + "/assets/img/icon/facebook_blue.png"} alt="Email" ></img>
-                </a>
-
-          </div>
-
-        </header>
+        {/* </nav> */}
+      </header>
   )
 }

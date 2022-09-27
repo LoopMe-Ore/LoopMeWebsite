@@ -288,138 +288,141 @@ p {
 
 /* 2. Header */
 
-  header{
-    width: 100vw;
-	height: 20vh;
-	position: absolute;
-	z-index: 100;
-  }
-
-  nav{
-	/* position: relative; */
-	height: 100%;
-	width: 100%;
-	display: flex !important;
-	align-items: center;
-	background-color: transparent;
-  }
-
-  .topnav {
-	overflow: hidden;
-	background-color: transparent;
-	display: flex;
-	width: 90vw;
-	justify-content: center;
-	align-items: center;
-  }
-  
-  nav{
-	/* position: relative; */
-	height: 100%;
-	width: 100%;
-	display: flex !important;
-	align-items: center;
-	justify-content: center;
-	background-color: transparent;
-  }
-
-  .topnav li {
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	margin: 0 1.5% 0 1.5%;
-  }
-
-  .nav_option a{
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 30px;
-	text-align: center;
-	letter-spacing: 0.02em;
-	color: #4F4F4F;
-
-  }
-  
-  .topnav li:hover {
-	/* background-color: #ddd; */
-	/* color: black; */
-  }
-  
-  .topnav li.active {
-	/* background-color: #04AA6D; */
-	/* color: white; */
-	position: absolute;
-	left: 10%;
-  }
-
-  .logoLoopMe{
-	/* height: 300px;
-	width: 500px; */
-	width: 200px;
-  }
-  
-  .topnav .icon {
-	display: none;
-	transition: 1s;
-  }
-
-  .viewjobsbtn{
-	position: absolute;
-	right: 15%;
-  }
-
-  .logoRemove{
-	display: none !important;
-  }
-  
-  @media screen and (max-width: 600px) {
-	.topnav li:not(:first-child) {display: none;}
-	.topnav li.icon {
-	  float: right;
-	  display: block;
-	  position: absolute;
-	  right: 0;
-	}
-  }
-  
-  @media screen and (max-width: 600px) {
-	.topnav.responsive {
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		height: 90vh;
-		top: 0;
-		margin-top: 7%;
-		background: rgba(255, 255, 255, 0.2);
-		backdrop-filter: blur(8px);
-		border-radius: 16px;
-	}
-
-
-	.topnav.responsive .icon {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	  width: 15%;
-	}
-	.topnav.responsive li {
-	  float: none;
-	  display: flex;
-	  text-align: left;
-	  width: 100%;
-	  flex-grow: 1;
-	  text-align: center;
-	  align-items: center;
-	  justify-content: center;
-	}
-  }
-
-
-
+/* .transparent-header{
+    left:0;
+    top:45px;
+    width:100%;
+    height:auto;
+    z-index:9;
+    position:fixed;
+    transition:top .3s
+}
+.main-menu .navigation{
+    display:flex
+}
+.main-menu nav{
+    display:flex!important;
+    align-items:center
+}
+.main-menu .navigation{
+    display:flex
+}
+.logoLoopMe{
+    flex-grow:1;
+    width:5%;
+    height:auto
+}
+.menu-style-two .navbar-wrap ul li a::before{
+    transform:skewX(-16deg);
+    transition:.4s linear
+}
+.navbar-wrap ul li a::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    transform:skewX(-10deg);
+    z-index:-1;
+    right:0;
+    margin:0 auto;
+    opacity:0
+}
+.navbar-wrap ul li:hover>a{
+    color:#f33;
+    font-size:18px;
+    text-decoration:none
+}
+.header-social ul li a:hover{
+    color:#e4a101
+}
+#social_links{
+    transition:1s
+}
+.navbar-wrap{
+    display:flex!important;
+    flex-direction:row;
+    flex-wrap:wrap;
+    flex-grow:2;
+    justify-content:center
+}
+.navbar-wrap ul li{
+    position:relative
+}
+.navbar-wrap ul li a{
+    font-family:Roboto;
+    font-style:normal;
+    font-weight:700;
+    font-size:14px;
+    line-height:30px;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    letter-spacing:.02em;
+    color:#4f4f4f
+}
+.navbar-wrap ul li:hover>a::after{
+    content:"";
+    position:absolute;
+    height:3px;
+    background:#e4a101;
+    right:40px;
+    left:0;
+    bottom:0
+}
+.navbar-wrap ul li:hover>a::before{
+    opacity:1
+}
+.menu-style-two .navbar-wrap ul li:hover>a::after{
+    display:none
+}
+.menu-style-two .navbar-wrap ul li a{
+    padding:15px 53px
+}
+.navbar-wrap ul li:hover>.submenu{
+    opacity:1;
+    visibility:visible;
+    transform:scale(1)
+}
+.main-menu .navigation{
+    display:flex
+}
+.viewjobsbtn{
+    display:flex;
+    flex-grow:1;
+    position:relative;
+    left:4%
+}
+.nav-logo img{
+    width:150px
+}
+.social-links{
+    display:flex;
+    flex-direction:row;
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index:100;
+    margin-right:10%;
+    height:20%;
+    width:20%
+}
+.container_Social{
+    margin:7%;
+    position:relative
+}
+.social_img{
+    position:absolute
+}
+.first{
+    z-index:100;
+    transition:.4s
+}
+.first:hover{
+    opacity:0
+}
+  */
 
 /* Header END */
 
@@ -682,12 +685,12 @@ p {
 
 .mainContainer {
 	/* background-color: #000; */
-	/* background-color: yellow; */
+	background-color: yellow;
 }
 
 .ourValues-area {
-	background-color: #000
-	/* background-color: yellow; */
+	/* background-color: #000 */
+	background-color: yellow;
 }
 
 .ourValues-area .container-full {
@@ -696,8 +699,8 @@ p {
 }
 
 .animation_ourvalues {
-	background-color: #000
-	/* background-color: green; */
+	/* background-color: #000 */
+	background-color: green;
 }
 
 

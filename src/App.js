@@ -7,11 +7,13 @@ import lottie from 'lottie-web';
 function App() {
 
   const container = useRef(null);
-  const [loading,setLoading] = useState(false);
+  const [loading,setLoading] = useState(true);
 
   useEffect(()=>{
 
-    lottie.loadAnimation({
+    // setLoading(true)
+
+    const lottieAnim = lottie.loadAnimation({
       container: container.current,
       renderer: "svg",
       loop: false,
@@ -20,25 +22,27 @@ function App() {
     });
 
 
-    setLoading(true)
-      setTimeout(()=>{
-        setLoading(false)
-        },10000)
+    lottieAnim.onComplete = function() {
+      console.log('complete');
+      setLoading(false);
+    }
+  
   },[])
-
 
 
   return (
     <div className="App">
 
-      {loading ? 
-        <div className="logoLoading" 
-          ref={container}
-          >
+       {/* {loading ?  */}
+
+        {/* <div className="logoLoading" ref={container}>
         </div>
-     :
+
+        : */}
+
           <HomeTwo/>
-      }
+       {/* } */}
+
       
     </div>
   );

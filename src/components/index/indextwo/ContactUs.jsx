@@ -16,20 +16,35 @@ function ContactUs({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefi
 			<div className="container">
 				<div className="row justify-content-center">
 					<div className="col-xl-6 col-lg-8">
+
 					<div className="section-title title-style-three text-center bene_toptxt">
 						<h2 className='beneHeader'>Contact Us</h2>
 						<p className='benetxt'>Can’t see your dream job? We’d still love to connect!Send us your details HERE  and we’ll be in touch for when that perfect fits come up. </p>
-						<img src={process.env.PUBLIC_URL + "/assets/img/images/contactUs/email.png"} alt="" />
+						<a className="contactUs_Link" href="mailto: contact@loopme.com?subject = Feedback&body = Message">
+							<img src={process.env.PUBLIC_URL + "/assets/img/images/contactUs/email.png"} alt="Email" />
+                		</a>
 					</div>
+
 					<div className="section-title title-style-three text-center bene_toptxt">
 						<h2 className='beneHeader'>Press Release</h2>
-						<p className='benetxt'>LoopMe in the Press</p> 
-						<img src={process.env.PUBLIC_URL + "/assets/img/images/contactUs/news.png"} alt="" /> 
+						<p className='benetxt'>LoopMe in the Press</p>
+						<a className="container_Social" href="https://loopme.com/press_releases/news/" target="_blank" rel="noopener noreferrer"><span className=""/>
+                    	<img src={process.env.PUBLIC_URL + "/assets/img/images/contactUs/news.png"} alt="" />
+                  </a>
+						 
+
 					</div>
+
+
 					<div className="section-title title-style-three text-center bene_toptxt">
 						<h2 className='beneHeader'>Support For Ukraine</h2>
-						<img src={process.env.PUBLIC_URL + "/assets/img/images/contactUs/Flags-Ukraine.png"} alt="" />
+						<a className="container_Social" href="https://loopme.com/update/" target="_blank" rel="noopener noreferrer"><span className=""/>
+                    		<img src={process.env.PUBLIC_URL + "/assets/img/images/contactUs/Flags-Ukraine.png"} alt="" />
+                  		</a>
 					</div>
+
+
+
 					</div>
 				</div>
 			</div>

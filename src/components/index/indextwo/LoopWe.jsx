@@ -52,7 +52,12 @@ function LoopWe({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefitsR
   return (
 
 	<section ref={initiativesRef} className="lpWE-area">
-			
+
+				
+				<div className="section-title title-style-three text-center mb-70">
+					<h2 className='header_black'> Initiatives </h2>
+				</div>
+
 				{/* <!-- Slideshow container --> */}
 				<div className="slideshow-container">
 

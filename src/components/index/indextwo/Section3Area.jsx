@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React,{ useEffect,useRef } from "react";
 import ReactDOM from "react-router-dom";
 import {Link} from 'react-router-dom'
 import { Controller, Scene } from "react-scrollmagic";
@@ -9,6 +9,13 @@ import Sequence from "./Sequence/Index";
 function Section3Area() {
 
   const ref = useRef();
+
+  useEffect(()=>{
+
+    // console.log(document.getElementsByClassName('scrollmagic-pin-spacer')[0].style.cssText)
+    // document.querySelector(".scrollmagic-pin-spacer").style.paddingTop = null;
+
+  },[])
 
   return (
 	
@@ -26,15 +33,25 @@ function Section3Area() {
 
       <div className="animation_ourvalues">
         <Controller>
-          <Scene duration="350%" triggerHook="onCenter" offset="500%" pin>
-            {(progress) => (
+          <Scene duration="950%" triggerHook="onCenter" offset="500%" pin indicators="true" >
+
+            {(progress,leave) => {
+              if(leave.type === "leave"){
+                {/* console.log("Finsihed"); */}
+                {/* Remove Spacing Bottom */}
+                document.querySelector(".scrollmagic-pin-spacer").style.paddingBottom = null
+              }
+              return (
               <div style={{ height: "100vh", position: "relative" }}>
                 <Sequence ref={ref} progress={progress} />
               </div>
-            )}
+              )
+            }}
+
           </Scene>
         </Controller>
       </div>
+      {/* <img className='bottom_section3' src={process.env.PUBLIC_URL + "/assets/img/bg/Bottom_wave.png"} alt="" /> */}
     </div>
 
     
