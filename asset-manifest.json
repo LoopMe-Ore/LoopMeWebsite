@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/LoopMeWebsite/static/css/main.bd2d3bc5.css",
-    "main.js": "/LoopMeWebsite/static/js/main.b2f6bff6.js",
+    "main.css": "/LoopMeWebsite/static/css/main.736e50b7.css",
+    "main.js": "/LoopMeWebsite/static/js/main.6f5cae5c.js",
     "static/js/787.bcecd1a5.chunk.js": "/LoopMeWebsite/static/js/787.bcecd1a5.chunk.js",
     "static/media/Background_Overlay.png": "/LoopMeWebsite/static/media/Background_Overlay.53fc5229d14e19a9d002.png",
     "static/media/HeroBackgroundCurved.png": "/LoopMeWebsite/static/media/HeroBackgroundCurved.caf45aa4cc6406a2358a.png",
@@ -457,12 +457,12 @@
     "static/media/Layer 8.jpg": "/LoopMeWebsite/static/media/Layer 8.d4a5bbe237c88b7804e5.jpg",
     "static/media/Layer 7.jpg": "/LoopMeWebsite/static/media/Layer 7.6ecdd360fef5a3af679e.jpg",
     "index.html": "/LoopMeWebsite/index.html",
-    "main.bd2d3bc5.css.map": "/LoopMeWebsite/static/css/main.bd2d3bc5.css.map",
-    "main.b2f6bff6.js.map": "/LoopMeWebsite/static/js/main.b2f6bff6.js.map",
+    "main.736e50b7.css.map": "/LoopMeWebsite/static/css/main.736e50b7.css.map",
+    "main.6f5cae5c.js.map": "/LoopMeWebsite/static/js/main.6f5cae5c.js.map",
     "787.bcecd1a5.chunk.js.map": "/LoopMeWebsite/static/js/787.bcecd1a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd2d3bc5.css",
-    "static/js/main.b2f6bff6.js"
+    "static/css/main.736e50b7.css",
+    "static/js/main.6f5cae5c.js"
   ]
 }
