@@ -71,7 +71,7 @@ function Home() {
                         {/* <Fade up delay={.4000}> */}
                           <div className='fade_1'>
                             <h1 className='homepageHeader' >Hello!</h1>
-                            <img className='hi_icon' src={process.env.PUBLIC_URL + "/assets/img/slider/Hi_icon.png"} alt="" />
+                            <img className='hi_icon' src= "https://i.loopme.me/gwd/test/LP_website/img/slider/Hi_icon.png" alt="" />
                           </div>
                         {/* </Fade> */}
                         
@@ -80,7 +80,7 @@ function Home() {
                         {/* </Fade> */}
           
                         {/* <Fade up delay={.8000}> */}
-                          <a href="/#"><span className=""/><img src={process.env.PUBLIC_URL + "/assets/img/slider/ViewJobsButtonBig.png"} alt="View Jobs" ></img></a>
+                          <a href="/#"><span className=""/><img src="https://i.loopme.me/gwd/test/LP_website/img/slider/ViewJobsButtonBig.png" alt="View Jobs" ></img></a>
                         {/* </Fade> */}
 
                         

@@ -67,19 +67,19 @@ function Benefits({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefit
 				{/* <!-- The dots/circles --> */}
 				<div className='Benefits_dots_circles'>
 					<span className="Benefits-dotLpWe" onClick={(e) => currentSlide(1,e)}>
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Flag-UK.png"} alt='' ></img>
+						<img className="benefits-SlideShowImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Flag-UK.png" alt='' ></img>
 					</span>
 					<span className="Benefits-dotLpWe" onClick={(e) => currentSlide(2,e)}>
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Flags-Ukraine.png"} alt='' ></img>
+						<img className="benefits-SlideShowImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Flags-Ukraine.png" alt='' ></img>
 					</span>
 					<span className="Benefits-dotLpWe" onClick={(e) => currentSlide(3,e)}>
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Flags-Poland.png"} alt='' ></img>
+						<img className="benefits-SlideShowImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Flags-Poland.png" alt='' ></img>
 					</span>
 					<span className="Benefits-dotLpWe" onClick={(e) => currentSlide(4,e)}>
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Flags-US.png"} alt='' ></img>
+						<img className="benefits-SlideShowImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Flags-US.png" alt='' ></img>
 					</span>
 					<span className="Benefits-dotLpWe" onClick={(e) => currentSlide(5,e)}>
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Flags-Singapore.png"} alt='' ></img>
+						<img className="benefits-SlideShowImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Flags-Singapore.png" alt='' ></img>
 					</span>
 				</div>
 
@@ -89,23 +89,23 @@ function Benefits({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefit
 
 				{/* <!-- Full-width images with number and caption text --> */}
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Benefits_UK.png"} alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_UK.png" alt='' ></img>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Benefits_Ukraine.png"} alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_Ukraine.png" alt='' ></img>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Benefits_UK.png"} alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_UK.png" alt='' ></img>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Benefits_US.png"} alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_US.png" alt='' ></img>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowImg" src={process.env.PUBLIC_URL + "/assets/img/images/Benefits/Benefits_APAC.png"} alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_APAC.png" alt='' ></img>
 					</div>
 
 

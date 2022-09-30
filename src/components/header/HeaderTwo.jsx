@@ -120,11 +120,11 @@ function myFunction() {
             <li className="nav_option" onClick={() => {handleScroll(contactRef.current);}}><Link to="/">Contact</Link></li>
 
             <li className="viewjobsbtn" onClick={() => {handleScroll(contactRef.current);}}>
-              <Link to="/"><img src={process.env.PUBLIC_URL + "/assets/img/icon/sm_viewjobsbtn_2.png"} alt="Logo" /></Link>
+              <Link to="/"><img src="https://i.loopme.me/gwd/test/LP_website/img/icon/sm_viewjobsbtn_2.png" alt="Logo" /></Link>
             </li>
 
             <li className="icon" onClick={() => {myFunction();}}>
-              <img id="openclosebtn" src={process.env.PUBLIC_URL + "/assets/img/icon/CircleMenuBtn.png"} alt="Logo" />
+              <img id="openclosebtn" src="https://i.loopme.me/gwd/test/LP_website/img/icon/CircleMenuBtn.png" alt="Logo" />
             </li>
 
 

@@ -150,7 +150,7 @@ p {
 	/* Backgrounds */
 
 .spaceBG {
-	background-image: url(../public/assets/img/bg/Background_Overlay.png);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/Background_Overlay.png);
 	background-color: #000;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -159,7 +159,7 @@ p {
 
 
 .main_bg_1 {
-	background-image: url(../public/assets/img/bg/bg_4secs/Layer\ 3.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 3.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -168,7 +168,7 @@ p {
 }
 
 .main_bg_2 {
-	background-image: url(../public//assets/img/bg/bg_4secs/Layer\ 4.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 4.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -177,7 +177,7 @@ p {
 }
 
 .main_bg_3 {
-	background-image: url(../public//assets/img/bg/bg_4secs/Layer\ 5.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 5.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -186,7 +186,7 @@ p {
 }
 
 .main_bg_4 {
-	background-image: url(../public//assets/img/bg/bg_4secs/Layer\ 6.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 6.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -195,7 +195,7 @@ p {
 }
 
 .main_bg_5 {
-	background-image: url(../public//assets/img/bg/bg_4secs/Layer\ 7.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 7.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -204,7 +204,7 @@ p {
 }
 
 .main_bg_6 {
-	background-image: url(../public//assets/img/bg/bg_4secs/Layer\ 8.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 8.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -438,7 +438,7 @@ p {
 }
 
 .slider-style-two {
-	background-image: url(../public/assets/img/bg/HeroBackgroundCurved.png);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/HeroBackgroundCurved.png);
 	padding: 290px 0 190px;
 	position: relative;
 	z-index: 1;

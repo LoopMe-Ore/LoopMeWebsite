@@ -84,7 +84,7 @@ const List = (props) => {
         <div className='hiring_search_filter_container'>
 
           <div className='search'>
-            <img alt="search" id='inputSearch_img' loading="eager" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/search_icon.png"}/>
+            <img alt="search" id='inputSearch_img' loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/search_icon.png"/>
             <input 
               type="search" 
               name="search-form" 
@@ -104,7 +104,7 @@ const List = (props) => {
 
           <div className='filter'>
 
-            <img alt="filter" id='filter_loc_img' loading="eager" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/location_logo.png"}/>
+            <img alt="filter" id='filter_loc_img' loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/location_logo.png"/>
 
             
 
@@ -120,11 +120,11 @@ const List = (props) => {
 
             {/* Filter By Countries */}
              <div id='filter_country_img' className='filter_country_img'>
-              <img alt="filter" loading="eager" name="United Kingdom" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/Flag-UK.png"} onClick={(e)  => toggleCountrySelect(e)}/>
-              <img alt="filter" loading="eager" name="Ukraine" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/Flags-Ukraine.png"} onClick={(e) => toggleCountrySelect(e)}/>
-              <img alt="filter" loading="eager" name="Poland" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/Flags-Poland.png"} onClick={(e) => toggleCountrySelect(e)}/>
-              <img alt="filter" loading="eager" name="United States" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/Flags-Us.png"} onClick={(e) => toggleCountrySelect(e)}/>
-              <img alt="filter" loading="eager" name="Singapore" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/Flags-Singapore.png"} onClick={(e) => toggleCountrySelect(e)}/>
+              <img alt="filter" loading="eager" name="United Kingdom" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flag-UK.png" onClick={(e)  => toggleCountrySelect(e)}/>
+              <img alt="filter" loading="eager" name="Ukraine" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Ukraine.png" onClick={(e) => toggleCountrySelect(e)}/>
+              <img alt="filter" loading="eager" name="Poland" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Poland.png" onClick={(e) => toggleCountrySelect(e)}/>
+              <img alt="filter" loading="eager" name="United States" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Us.png" onClick={(e) => toggleCountrySelect(e)}/>
+              <img alt="filter" loading="eager" name="Singapore" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Singapore.png" onClick={(e) => toggleCountrySelect(e)}/>
             </div>
 
             {/* Dropdown Department */}
@@ -160,14 +160,14 @@ const List = (props) => {
             <div key={i} className='list_hiring' onClick={event => window.open(repo.shortlink, '_blank').focus()}>
 
                   <div className='repo-title hiringSec'>
-                    <img alt="a pic" className="repo_tlt_pic" loading="eager" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/RectangleTitle.png"}/>
+                    <img alt="a pic" className="repo_tlt_pic" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/RectangleTitle.png"/>
                     <div>{repo.title}</div>
                   </div>
 
                   <div className='repo-city-state hiringSec'> {repo.city} {repo.state} </div>
-                  <img alt="border" className="seperation_border" loading="eager" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/Vector12.png"}/>
+                  <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
                   <div className='repo-department hiringSec'> {repo.department}, {repo.function} </div>
-                  <img alt="border" className="seperation_border" loading="eager" src={process.env.PUBLIC_URL + "/assets/img/images/Hiring/Vector12.png"}/>
+                  <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
                   <div className='repo-employ-type hiringSec'> {repo.employment_type} </div>
             </div>
             
