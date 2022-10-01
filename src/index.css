@@ -54,9 +54,9 @@ body {
 
 body,
 html {
-	max-width: 100%;
+	max-width: 100vw;
 	overflow-x: hidden;
-	background-color: #fff;
+	/* background-color: blue; */
 }
 
 
@@ -159,7 +159,7 @@ p {
 
 
 .main_bg_1 {
-	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 3.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer3.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -168,7 +168,7 @@ p {
 }
 
 .main_bg_2 {
-	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 4.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer4.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -177,7 +177,7 @@ p {
 }
 
 .main_bg_3 {
-	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 5.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer5.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -186,7 +186,7 @@ p {
 }
 
 .main_bg_4 {
-	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 6.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer6.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -195,7 +195,7 @@ p {
 }
 
 .main_bg_5 {
-	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 7.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer7.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -204,7 +204,7 @@ p {
 }
 
 .main_bg_6 {
-	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer\ 8.jpg);
+	background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/bg_4secs/Layer8.jpg);
 	background-color: #c8ff0b;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -681,7 +681,7 @@ p {
 /* 5. Our Values */
 
 .mainContainer {
-	/* background-color: #000; */
+	background-color: #000;
 	/* background-color: yellow; */
 }
 

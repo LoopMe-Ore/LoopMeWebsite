@@ -71,7 +71,7 @@ function Home() {
                         {/* <Fade up delay={.4000}> */}
                           <div className='fade_1'>
                             <h1 className='homepageHeader' >Hello!</h1>
-                            <img className='hi_icon' src= "https://i.loopme.me/gwd/test/LP_website/img/slider/Hi_icon.png" alt="" />
+                            <img className='hi_icon' src= "https://i.loopme.me/gwd/test/LP_website/img/slider/Hi_Icon.png" alt="" />
                           </div>
                         {/* </Fade> */}
                         

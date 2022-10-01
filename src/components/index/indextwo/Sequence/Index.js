@@ -8,11 +8,15 @@ const ImageSequence = forwardRef(({ progress }, ref) => {
 
   let index = Math.round(progress * 1 * (newImages.length - 1));
 
+  // backgroundImage: `url('${item[0] ? item[0].src : null}')`,
+
+
   if (newImages[index][1] !== undefined) {
 
     if (newImages[index][1] === "loading") {
       return <Skeleton width="100%" height="100%" />;
     } else {
+      
       return newImages.map((item, i) => (
         <span
           ref={ref}
@@ -22,12 +26,28 @@ const ImageSequence = forwardRef(({ progress }, ref) => {
             height: "100%",
             width: "100%",
             backgroundImage: `url('${item[0] ? item[0].src : null}')`,
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundPosition: "center"
           }}
         />
+
+        // <link ref={ref} 
+        //       key={i}
+        //       rel="preload" 
+        //       href={item[0] ? item[0].src : null}
+        //       style={{
+        //         display: i !== index ? "none" : "block",
+        //         height: "100%",
+        //         width: "100%"
+        //       }}
+        //       >
+        // </link>
       ));
+        
     }
+  } else {
+{/* <link rel="preload" fetchpriority="high" as="image" href="/path/to/hero-image.webp" type="image/webp"></link> */}
+    console.log("SECTION 3 FAIL")
   }
 });
 

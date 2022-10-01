@@ -42,7 +42,7 @@ function IndexTwo(){
             </div>
 
             {/* Our Values */}
-            <Section3Area/>
+                <Section3Area/>
             
             <div className='main_bg_1'>
 

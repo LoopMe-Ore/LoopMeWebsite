@@ -12,8 +12,6 @@ function Section3Area() {
 
   useEffect(()=>{
 
-    // console.log(document.getElementsByClassName('scrollmagic-pin-spacer')[0].style.cssText)
-    // document.querySelector(".scrollmagic-pin-spacer").style.paddingTop = null;
 
   },[])
 
@@ -22,7 +20,7 @@ function Section3Area() {
       <div className="mainContainer">
 
         <div>
-        <section className="ourValues-area position-relative pt-115 pb-90 row justify-content-center">
+        <section className="ourValues-area position-relative pt-115 row justify-content-center">
           <div className="section-title title-style-three text-center mb-70 col-xl-5 col-lg-7 ">
             <h2> Our Values </h2>
             <p>This is why we’re committing to nurturing an inclusive and diverse global team. We know that diversity drives innovation, which is why we deeply value your perspective and have built a culture in which you can do your very best work. </p>
@@ -37,9 +35,10 @@ function Section3Area() {
 
             {(progress,leave) => {
               if(leave.type === "leave"){
-                {/* console.log("Finsihed"); */}
+
                 {/* Remove Spacing Bottom */}
                 document.querySelector(".scrollmagic-pin-spacer").style.paddingBottom = null
+
               }
               return (
               <div style={{ height: "100vh", position: "relative" }}>

@@ -58,7 +58,7 @@
 	}
 
 
-	/* Header */
+/* Header */
 
 	.topnav li.active {
 		/* background-color: #04AA6D; */
@@ -83,7 +83,7 @@
 	
 	}
 
-	/* Header End */
+/* Header End */
 
 	/* Space Background */
 
@@ -94,9 +94,13 @@
 		/* background-position: bottom center; */
 	}
 
+	.mainContainer{
+		max-width: 100vw!important;
+	}
 
 
-	/* Worldwide Loopers */
+
+/* Worldwide Loopers */
 
 
 	.wwloopers-content {
@@ -120,7 +124,23 @@
 	/* End */
 
 
-	/* intiatives (LoopWe) */
+/* Our Values */
+
+
+	.scrollmagic-pin-spacer div div span{
+		/* display: none!important; */
+		background-size: contain!important;
+		background-repeat: no-repeat!important;
+	}
+
+
+	/* End */
+
+
+
+
+
+/* intiatives (LoopWe) */
 
 
 	.mySlides{
@@ -190,7 +210,7 @@
 		margin: 14px;
 	}
 
-	/* Benefits */
+/* Benefits */
 
 	.Benefits-dotLpWe {
 		display: flex;
@@ -211,7 +231,7 @@
 	}
 
 
-	/* Hiring */
+/* Hiring */
 
 	.hiring-area {
 		padding: 0;
@@ -328,14 +348,6 @@
 		right: -29%;
 
 	}
-
-
-
-
-
-
-
-
 
 
 

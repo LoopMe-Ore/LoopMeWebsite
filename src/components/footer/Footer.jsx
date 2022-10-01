@@ -6,7 +6,7 @@ function Footer() {
 
         <div className="footer-top footer-bg">
 
-        <img className='footer_line' src="assets/img/images/contactUs/line.png" alt="" />
+        <img className='footer_line' src="https://i.loopme.me/gwd/test/LP_website/img/images/contactUs/Line.png" alt="" />
 
           <div className="container">
             <div className="row justify-content-between">
