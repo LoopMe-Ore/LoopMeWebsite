@@ -104,7 +104,7 @@ const List = (props) => {
 
           <div className='filter'>
 
-            <img alt="filter" id='filter_loc_img' loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/location_logo.png"/>
+            <img alt="filter" id='filter_loc_img'  src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/location_logo.png"/>
 
             
 
@@ -120,11 +120,11 @@ const List = (props) => {
 
             {/* Filter By Countries */}
              <div id='filter_country_img' className='filter_country_img'>
-              <img alt="filter" loading="eager" name="United Kingdom" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flag-UK.png" onClick={(e)  => toggleCountrySelect(e)}/>
-              <img alt="filter" loading="eager" name="Ukraine" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Ukraine.png" onClick={(e) => toggleCountrySelect(e)}/>
-              <img alt="filter" loading="eager" name="Poland" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Poland.png" onClick={(e) => toggleCountrySelect(e)}/>
-              <img alt="filter" loading="eager" name="United States" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Us.png" onClick={(e) => toggleCountrySelect(e)}/>
-              <img alt="filter" loading="eager" name="Singapore" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Singapore.png" onClick={(e) => toggleCountrySelect(e)}/>
+              <img alt="filter" name="United Kingdom" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flag-UK.png" onClick={(e)  => toggleCountrySelect(e)}/>
+              <img alt="filter" name="Ukraine" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Ukraine.png" onClick={(e) => toggleCountrySelect(e)}/>
+              <img alt="filter" name="Poland" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Poland.png" onClick={(e) => toggleCountrySelect(e)}/>
+              <img alt="filter" name="United States" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Us.png" onClick={(e) => toggleCountrySelect(e)}/>
+              <img alt="filter" name="Singapore" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Flags-Singapore.png" onClick={(e) => toggleCountrySelect(e)}/>
             </div>
 
             {/* Dropdown Department */}

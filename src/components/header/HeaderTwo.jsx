@@ -23,40 +23,35 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
 
   const handleHover = (whichway) => {
 
-    if (whichway === "Enter"){
-      lottie.setDirection(1)
-      lottie.play()
+      if (whichway === "Enter"){
+        lottie.setDirection(1)
+        lottie.play()
 
-  } else if (whichway === "Leave"){
-    lottie.setDirection(-1)
-    lottie.play()
-  }
-}
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+      } else if (whichway === "Leave"){
+        lottie.setDirection(-1)
+        lottie.play()
+      }
   }
 
-  var navlogo = document.getElementById("lp_logo");
-  if (navlogo.className === "active") {
-    navlogo.className += " logoRemove";
-  } else {
-    navlogo.className = "active";
+  // MOBILE MENU TOGGLE
+  function myFunction() {
+
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+
+    var navlogo = document.getElementById("lp_logo");
+    if (navlogo.className === "active") {
+      navlogo.className += " logoRemove";
+    } else {
+      navlogo.className = "active";
+    }
+
+
   }
-
-  // var openclosebtn = document.getElementById("openclosebtn");
-  // if (openclosebtn.className === "active") {
-  //   openclosebtn.className += " logoRemove";
-  // } else {
-  //   openclosebtn.className = "active";
-  // }
-
-
-}
   
   useEffect(()=>{
 
@@ -69,25 +64,47 @@ function myFunction() {
       animationData: require("../header/lotties/HoverJson.json")
     });
     
-    // Change to highlight hyperlink glow as scroll through pages
-    // https://alvarotrigo.com/blog/sticky-navbar/
 
-    // var prevScrollpos = window.pageYOffset;
-    // window.onscroll = function() {
-    //   var currentScrollPos = window.pageYOffset;
-    //   if (prevScrollpos > currentScrollPos) {
-    //     document.getElementById("header").style.top = "0";
-    //     // document.getElementById("social_links").style.opacity = "100";
-    //     // fade in out?
-    //     // document.getElementById("sticky-header").style.display = "flex";
-    //   } else {
-    //     document.getElementById("header").style.top = "-170px";
-    //     // document.getElementById("social_links").style.opacity = "0";
-    //     // fade in out?
-    //     // document.getElementById("sticky-header").style.display = "none";
-    //   }
-    //   prevScrollpos = currentScrollPos;
-    // }
+    const nav = document.querySelector("header");
+    const navHeight = 70;
+    // the point the scroll starts from (in px)
+    let lastScrollY = 0;
+    // how far to scroll (in px) before triggering
+    const delta = 10;
+
+    // function to run on scrolling
+    function scrolled() {
+      let sy = window.scrollY;
+      // only trigger if scrolled more than delta
+      if (Math.abs(lastScrollY - sy) > delta) {
+        // scroll down -> hide nav bar
+        if (sy > lastScrollY && sy > navHeight) {
+          nav.classList.add("nav-up");
+        } 
+        // scroll up -> show nav bar
+        else if (sy < lastScrollY) {
+          nav.classList.remove("nav-up");
+        }
+      // update current scroll point
+      lastScrollY = sy 
+      }
+    }
+
+    // Add event listener & debounce so not constantly checking for scroll
+    let didScroll = false;
+    window.addEventListener("scroll", function(e){
+      didScroll = true;
+    });
+
+    setInterval(function() {
+      if (didScroll) {
+        scrolled();
+        didScroll = false;
+      }
+    }, 250)
+
+
+
 
 
     return () => {
@@ -132,7 +149,36 @@ function myFunction() {
         </nav>
 
 
-        {/* </nav> */}
+        {/* <div id="social_links" className="social-links">
+
+                  <a className="container_Social" href = "mailto: contact@loopme.com"> 
+                    <img className="social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/email.png" alt="Email"></img> 
+                    <img className="social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/email_red.png" alt="Email"></img> 
+                  </a>
+
+                  <a className="container_Social" href="https://twitter.com/LoopMe?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer"><span className=""/>
+                    <img className = "social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/twitter_black.png" alt=" Email " ></img>
+                    <img className = "social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/twitter_blue.png" alt=" Email " ></img>
+                  </a>
+
+                <a className="container_Social" href="https://www.linkedin.com/company/loopme/mycompany/" target="_blank" rel="noopener noreferrer"><span className=""/>
+                  <img className = "social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/linkedin_black.png" alt=" Email " ></img>
+                  <img className = "social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/linkedin_blue.png" alt=" Email " ></img>
+                </a>
+
+                <a className="container_Social" href="https://www.instagram.com/instaloopme/" target="_blank" rel="noopener noreferrer"><span className=""/>
+                  <img className = "social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/instagram_black.png" alt=" Email " ></img>
+                  <img className = "social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/instagram_insta.png" alt=" Email " ></img>
+                </a>
+
+                <a className="container_Social" href="https://en-gb.facebook.com/LoopMeMedia/" target="_blank" rel="noopener noreferrer"><span className=""/>
+                  <img className = "social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/facebook_black.png" alt="Email" ></img>
+                  <img className = "social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/facebook_blue.png" alt="Email" ></img>
+                </a>
+
+          </div> */}
+
+
       </header>
   )
 }

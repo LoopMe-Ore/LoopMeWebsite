@@ -25,8 +25,6 @@ function IndexTwo(){
         <>
         {/* header-area */}
 
-        {/* <img src={process.env.PUBLIC_URL + "/Benefits_UK.png"} /> */}
-
         <HeaderTwo aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
 
         <main>
@@ -51,7 +49,7 @@ function IndexTwo(){
             </div>
 
             <div className='main_bg_2'>
-                {/* Meet The Team */}
+                {/* Meet The Team */} 
                 <MeetTheTeam/>
             </div>
 

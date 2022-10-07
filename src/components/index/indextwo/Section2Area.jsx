@@ -16,6 +16,8 @@ function Section2Area({aboutRef={aboutRef}, initiativesRef={initiativesRef}, ben
                       <p className="wwLoopers_p">We’re a globally connected and collaborative business with Loopers in London, New York, Boston, Atlanta, Chicago, Detroit, San Francisco, Los Angeles, Toronto, Singapore, Sydney, Tokyo, Dnipro, Krakow and Hong Kong.</p>
                       <br></br>
                       <div className="wwloopers-btn">
+                      
+                        {/* <img className='spinningEarth' src="https://i.loopme.me/gwd/test/LP_website/img/images/worldwideLoopers/EarthSpinning.png" alt="" /> */}
                         <img className='spinningEarth' src="https://i.loopme.me/gwd/test/LP_website/Earth-Spinning-Loop%20(1).gif" alt="" />
                       </div>
                     </div>

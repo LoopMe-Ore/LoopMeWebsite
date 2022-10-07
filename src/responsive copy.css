@@ -1,0 +1,539 @@
+/* 
+
+1. Global
+
+2. Header
+
+3. Home
+
+4. Worldwide Loopers
+
+5. Our Values
+
+6. LoopMe Overviews
+
+7. Meet The Team
+
+8. Loop We
+
+9. Benefits
+
+10. Hiring
+
+11. Contact Us
+
+12. Footer
+
+ */
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	/* Backgrounds */
+
+	.main_bg_1{
+		overflow: hidden;
+	}
+
+	.main_bg_2{
+		overflow: hidden;
+	}
+
+	.main_bg_3{
+		overflow: hidden;
+	}
+
+	.main_bg_4{
+		overflow: hidden;
+	}
+
+	.main_bg_5{
+		overflow: hidden;
+	}
+
+	.main_bg_6{
+		overflow: hidden;
+	}
+
+
+/* Header */
+
+	.topnav li.active {
+		/* background-color: #04AA6D; */
+		/* color: white; */
+		position: absolute;
+		left: 0%;
+	}
+
+
+	.logoLoopMe {
+		width: 110px;
+	}
+
+	.slider-style-two {
+		background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/Mobile_HeroBackgroundCurved.png);
+		padding: 110px 0 0px 0px;
+		position: relative;
+		z-index: 1;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+	
+	}
+
+/* Header End */
+
+	/* Space Background */
+
+	.spaceBG{
+		background-color: #000;
+		/* background-size: cover; */
+		background-repeat: no-repeat;
+		/* background-position: bottom center; */
+		background-size: 300vw 100%;
+
+	}
+
+	.mainContainer{
+		max-width: 100vw!important;
+	}
+
+
+/* Home */
+
+.homepageHeader{
+	font-size: 62px!important;
+}
+
+.slider-style-two .slider-content p {
+
+	font-size: 16px!important;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+
+}
+
+
+/* Home End */
+
+
+
+/* Worldwide Loopers */
+
+
+	.wwloopers-content {
+		padding: 0 0px;
+	}
+
+	.title-style-three.white-title p {
+		width: 90%;
+	}
+
+	.spinningEarth{
+		max-width: 80%;
+	}
+
+	.wwloopers-btn{
+		display: flex;
+    	justify-content: center;
+	}
+
+	/* Mobile. Header */
+	.wwloopers-content .section-title h2{
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 50px;
+
+		color: #F2F2F2;
+	}
+
+
+	.title-style-three.white-title p {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		/* or 171% */
+		
+		text-align: center;
+		
+		/* Gray 6 */
+		
+		color: #F2F2F2;
+		
+	}
+
+
+
+	/* End */
+
+
+/* Our Values */
+
+
+	.scrollmagic-pin-spacer div div span{
+		/* display: none!important; */
+		background-size: contain!important;
+		background-repeat: no-repeat!important;
+	}
+
+
+
+	/* End */
+
+
+/* LoopMe Overview */
+
+.container_grid{
+	/* grid-template-columns: 100%;
+	grid-template-rows: 100%; */
+
+	/* Change All Grid content to grid and text and then
+	add js to change display: flex, on click, to next one */
+}
+
+/* End */
+
+
+/* Meet the team */
+
+.items_mtt{
+	pointer-events: none;
+}
+
+.left-pos{
+	pointer-events: none;
+	display: none!important;
+}
+
+.right-pos{
+	pointer-events: none;
+	display: none!important;
+}
+
+.back-pos{
+	pointer-events: none;
+	display: none!important;
+}
+
+.carousel_meettheteam>.items_mtt{
+	width: 90%!important;
+}
+	
+
+/* End */
+
+
+/* intiatives (LoopWe) */
+
+
+	.mySlides{
+		/* display: none; */
+	}
+
+	.lpWE-area {
+		margin-top: 0px;
+	}
+
+	.slideshow-container {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.mySlides {
+		height: 100%;
+		width: 90%;
+	}
+
+	.lpWe_text {
+		/* position: relative; */
+		/* top: 0%; */
+		/* left: 7%; */
+		width: 100%;
+		/* background-color: green; */
+	}
+
+	.headerLpWe {
+		text-align: left;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 50px;
+		margin-bottom: 5%;
+	}
+
+	.textLpWe {
+		color: #333333;
+		text-align: left;
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 24px;
+	}
+
+	.SlideShowImg {
+		position: relative;
+		top: 0%;
+		width: 80%;
+	}
+
+
+	.LpWe_dots{
+		display: flex;
+		flex-direction: row;
+		max-width: 100vw;
+		justify-content: space-evenly;
+		margin-top: 0;
+	}
+	
+	.dot_text{
+		display: none;
+	}
+
+	.dotLpWe {
+		height: 32px;
+		width: 32px;
+		margin: 14px;
+	}
+
+/* Benefits */
+
+	.Benefits-dotLpWe {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 36px;
+		width: 36px;
+		margin: 10px;
+	}
+
+	.benefits-SlideShowImg{
+		width: 32px;
+		height: 32px;
+	}
+
+	.benefits-SlideShowMainImg{
+		max-width: 100%;
+	}
+
+
+/* Hiring */
+
+	.hiring-area {
+		padding: 0;
+	}
+
+	.hiring_container {
+		border-radius: 24px;
+		padding: 13px;
+
+	}
+
+	#myUL .list_hiring {
+		height: 19vh;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.hiring_search_filter_container {
+		padding: 0px;
+	}
+
+	.search{
+		width: 100%;
+	}
+	
+	.filter {
+		flex-direction: column;
+	}
+
+	.filter > * {
+		margin: 2%;
+	}
+
+	.filter_country_img {
+		/* display: none; */
+	}
+
+	.filter_country_img img {
+		max-width: 36px;
+		max-height: 36px;
+	}
+
+	.dropdown-container{
+
+
+	}
+
+	.main-button {
+
+		width: 100%; 
+	}
+
+	
+	.list_hiring{
+		/* display: none!important; */
+	}
+
+	.repo_tlt_pic {
+		display: none;
+	}
+
+	.repo-title {
+		width: 100%;
+		height: 33%;
+	}
+
+	.repo-title div {
+		background-color: #f6f6f6;
+		color: red;
+		width: 100%;
+		text-align: left;
+	}
+
+
+	.repo-city-state {
+		/* display: none; */
+		width: 100%;
+		order: 3;
+		font-size: 14px;
+		/* background-color: blue; */
+		border-top: 1px solid grey;
+		text-align: left;
+		padding-top: 5px;
+	}
+
+	.seperation_border{
+		display: none;
+	}
+
+	.repo-department {
+		font-size: 14px;
+		width: 28%;
+		text-align: left;
+		/* background-color: red; */
+		color: red;
+		order: 2;
+		position: relative;
+		top: -2%;
+		border: 0;
+    	border-right: 3px solid red;
+		/* border-spacing: 20px; */
+		/* margin-right: 10px; */
+
+	}
+
+	.repo-employ-type {
+		/* display: none; */
+		font-size: 14px;
+		order: 2;
+		/* background-color: yellow; */
+		color: red;
+		position: relative;
+		top: -22%;
+		right: -29%;
+
+	}
+
+	.canvas-wrapper canvas{
+		width: 100%;
+	}
+
+
+	/* Footer */
+
+	.lp_footer {
+		background-color: #f9f9f9;
+		height: 100vh;
+	}
+
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	/* html{
+		height: 100vh;
+		background: rgb(82,76,76);
+		background: -moz-radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		background: -webkit-radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		background: radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#524c4c",endColorstr="#454545",GradientType=1);
+	} */
+
+	body{
+		/* display: none; */
+	}
+
+	/* .spaceBG{
+		background-size: 300vw 100%;
+
+	} */
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+	/* html{
+		height: 100vh;
+		background: rgb(82,76,76);
+		background: -moz-radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		background: -webkit-radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		background: radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#524c4c",endColorstr="#454545",GradientType=1);
+	} */
+
+	body{
+		/* display: none; */
+	}
+
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	/* html{
+		height: 100vh;
+		background: rgb(82,76,76);
+		background: -moz-radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		background: -webkit-radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		background: radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#524c4c",endColorstr="#454545",GradientType=1);
+	} */
+
+	/* body{
+		display: none;
+	} */
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/* 
+	html{
+		/* height: 100vh;
+		background: rgb(82,76,76);
+		background: -moz-radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		background: -webkit-radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		background: radial-gradient(circle, rgba(82,76,76,1) 0%, rgba(152,50,50,1) 39%, rgba(69,69,69,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#524c4c",endColorstr="#454545",GradientType=1); */
+	/* } */
+
+	/* body{
+		display: flex;
+	} */
+
+
+}

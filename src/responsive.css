@@ -31,323 +31,1134 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-	/* Backgrounds */
-
-	.main_bg_1{
-		overflow: hidden;
+	.topnav{
+		background-color: pink;
 	}
 
-	.main_bg_2{
-		overflow: hidden;
+		/* Backgrounds */
+
+		.main_bg_1{
+			overflow: hidden;
+		}
+	
+		.main_bg_2{
+			overflow: hidden;
+		}
+	
+		.main_bg_3{
+			overflow: hidden;
+		}
+	
+		.main_bg_4{
+			overflow: hidden;
+		}
+	
+		.main_bg_5{
+			overflow: hidden;
+		}
+	
+		.main_bg_6{
+			overflow: hidden;
+		}
+	
+	
+	/* Header */
+	
+		.topnav li.active {
+			/* background-color: #04AA6D; */
+			/* color: white; */
+			position: absolute;
+			left: 0%;
+		}
+	
+	
+		.logoLoopMe {
+			width: 110px;
+		}
+	
+		.slider-style-two {
+			background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/Mobile_HeroBackgroundCurved.png);
+			padding: 110px 0 0px 0px;
+			position: relative;
+			z-index: 1;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+		
+		}
+
+		.hi_icon{
+			top:-9%!important;
+		}
+
+	
+	/* Header End */
+	
+		/* Space Background */
+	
+		.spaceBG{
+			background-color: #000;
+			/* background-size: cover; */
+			background-repeat: no-repeat;
+			/* background-position: bottom center; */
+			background-size: 300vw 100%;
+	
+		}
+	
+		.mainContainer{
+			max-width: 100vw!important;
+		}
+	
+	
+	/* Home */
+	
+	.homepageHeader{
+		font-size: 62px!important;
 	}
-
-	.main_bg_3{
-		overflow: hidden;
-	}
-
-	.main_bg_4{
-		overflow: hidden;
-	}
-
-	.main_bg_5{
-		overflow: hidden;
-	}
-
-	.main_bg_6{
-		overflow: hidden;
-	}
-
-
-/* Header */
-
-	.topnav li.active {
-		/* background-color: #04AA6D; */
-		/* color: white; */
-		position: absolute;
-		left: 0%;
-	}
-
-
-	.logoLoopMe {
-		width: 110px;
-	}
-
-	.slider-style-two {
-		background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/Mobile_HeroBackgroundCurved.png);
-		padding: 110px 0 0px 0px;
-		position: relative;
-		z-index: 1;
-		height: 100vh;
-		display: flex;
-		align-items: center;
+	
+	.slider-style-two .slider-content p {
+	
+		font-size: 16px!important;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 27px;
 	
 	}
-
-/* Header End */
-
-	/* Space Background */
-
-	.spaceBG{
-		background-color: #000;
-		background-size: cover;
-		background-repeat: no-repeat;
-		/* background-position: bottom center; */
+	
+	
+	/* Home End */
+	
+	
+	
+	/* Worldwide Loopers */
+	
+	
+		.wwloopers-content {
+			padding: 0 0px;
+		}
+	
+		.title-style-three.white-title p {
+			width: 90%;
+		}
+	
+		.spinningEarth{
+			max-width: 80%;
+		}
+	
+		.wwloopers-btn{
+			display: flex;
+			justify-content: center;
+		}
+	
+		/* Mobile. Header */
+		.wwloopers-content .section-title h2{
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 42px;
+			line-height: 50px;
+	
+			color: #F2F2F2;
+		}
+	
+	
+		.title-style-three.white-title p {
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 24px;
+			/* or 171% */
+			
+			text-align: center;
+			
+			/* Gray 6 */
+			
+			color: #F2F2F2;
+			
+		}
+	
+	
+	
+		/* End */
+	
+	
+	/* Our Values */
+	
+	
+		.scrollmagic-pin-spacer div div span{
+			/* display: none!important; */
+			background-size: contain!important;
+			background-repeat: no-repeat!important;
+		}
+	
+	
+	
+		/* End */
+	
+	
+	/* LoopMe Overview */
+	
+	.container_grid{
+		/* grid-template-columns: 100%;
+		grid-template-rows: 100%; */
+	
+		/* Change All Grid content to grid and text and then
+		add js to change display: flex, on click, to next one */
 	}
-
-	.mainContainer{
-		max-width: 100vw!important;
-	}
-
-
-
-/* Worldwide Loopers */
-
-
-	.wwloopers-content {
-		padding: 0 0px;
-	}
-
-	.title-style-three.white-title p {
-		width: 90%;
-	}
-
-	.spinningEarth{
-		max-width: 80%;
-	}
-
-	.wwloopers-btn{
-		display: flex;
-    	justify-content: center;
-	}
-
-
+	
 	/* End */
-
-
-/* Our Values */
-
-
-	.scrollmagic-pin-spacer div div span{
-		/* display: none!important; */
-		background-size: contain!important;
-		background-repeat: no-repeat!important;
+	
+	
+	/* Meet the team */
+	
+	.items_mtt{
+		pointer-events: none;
 	}
-
-
+	
+	.left-pos{
+		pointer-events: none;
+		display: none!important;
+	}
+	
+	.right-pos{
+		pointer-events: none;
+		display: none!important;
+	}
+	
+	.back-pos{
+		pointer-events: none;
+		display: none!important;
+	}
+	
+	.carousel_meettheteam>.items_mtt{
+		width: 90%!important;
+	}
+		
+	
 	/* End */
+	
+	
+	/* intiatives (LoopWe) */
+	
+	
+		.mySlides{
+			/* display: none; */
+		}
+	
+		.lpWE-area {
+			margin-top: 10px;
+		}
+	
+		.slideshow-container {
+			width: 100%;
+			flex-direction: column;
+		}
+	
+		.mySlides {
+			height: 100%;
+			width: 90%;
+		}
+	
+		.lpWe_text {
+			/* position: relative; */
+			/* top: 0%; */
+			/* left: 7%; */
+			width: 100%;
+			/* background-color: green; */
+		}
+	
+		.headerLpWe {
+			text-align: left;
+			font-weight: 700;
+			font-size: 38px;
+			line-height: 50px;
+			margin-bottom: 5%;
+		}
+	
+		.textLpWe {
+			color: #333333;
+			text-align: left;
+			font-weight: 400;
+			font-size: 10px;
+			line-height: 24px;
+		}
+	
+		.SlideShowImg {
+			position: relative;
+			top: 0%;
+			width: 80%;
+		}
+	
+	
+		.LpWe_dots{
+			display: flex;
+			flex-direction: row;
+			max-width: 100vw;
+			justify-content: space-evenly;
+			margin-top: 0;
+		}
+		
+		.dot_text{
+			display: none;
+		}
+	
+		.dotLpWe {
+			height: 32px;
+			width: 32px;
+			margin: 14px;
+		}
+
+		#root > div > main > div.main_bg_3 > section > div > div:nth-child(1) > div > h2{
+			font-size: 45px!important;
+		}
+
+		#root > div > main > div.main_bg_3 > section > div > div.LpWe_dots{
+			margin-top: 17%!important;
+		}
+
+		#root > div > main > div.main_bg_3 > section > div > div:nth-child(2) > div > h2{
+			font-size: 45px!important;
+		}
+
+		#root > div > main > div.main_bg_3 > section > div > div:nth-child(2) > div > p{
+
+		}
+
+		#root > div > main > div.main_bg_3 > section > div > div:nth-child(1) > img{
+			width: 90%!important;
+		}
+	
+	/* Benefits */
+	
+		.Benefits-dotLpWe {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 36px;
+			width: 36px;
+			margin: 10px;
+		}
+	
+		.benefits-SlideShowImg{
+			width: 32px;
+			height: 32px;
+		}
+	
+		.benefits-SlideShowMainImg{
+			max-width: 100%;
+		}
+	
+	
+	/* Hiring */
+	
+		.hiring-area {
+			padding: 0;
+		}
+	
+		.hiring_container {
+			border-radius: 24px;
+			padding: 13px;
+	
+		}
+	
+		#myUL .list_hiring {
+			height: 19vh;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	
+		.hiring_search_filter_container {
+			padding: 0px;
+		}
+	
+		.search{
+			width: 100%;
+		}
+		
+		.filter {
+			flex-direction: column;
+		}
+	
+		.filter > * {
+			margin: 2%;
+		}
+	
+		.filter_country_img {
+			/* display: none; */
+		}
+	
+		.filter_country_img img {
+			max-width: 36px;
+			max-height: 36px;
+		}
+	
+		.dropdown-container{
+	
+	
+		}
+	
+		.main-button {
+	
+			width: 100%; 
+		}
+	
+		
+		.list_hiring{
+			/* display: none!important; */
+		}
+	
+		.repo_tlt_pic {
+			display: none;
+		}
+	
+		.repo-title {
+			width: 100%;
+			height: 33%;
+		}
+	
+		.repo-title div {
+			background-color: #f6f6f6;
+			color: red;
+			width: 100%;
+			text-align: left;
+		}
+	
+	
+		.repo-city-state {
+			/* display: none; */
+			width: 100%;
+			order: 3;
+			font-size: 14px;
+			/* background-color: blue; */
+			border-top: 1px solid grey;
+			text-align: left;
+			padding-top: 5px;
+		}
+	
+		.seperation_border{
+			display: none;
+		}
+	
+		.repo-department {
+			font-size: 14px;
+			width: 28%;
+			text-align: left;
+			/* background-color: red; */
+			color: red;
+			order: 2;
+			position: relative;
+			top: -2%;
+			border: 0;
+			border-right: 3px solid red;
+			/* border-spacing: 20px; */
+			/* margin-right: 10px; */
+	
+		}
+	
+		.repo-employ-type {
+			/* display: none; */
+			font-size: 14px;
+			order: 2;
+			/* background-color: yellow; */
+			color: red;
+			position: relative;
+			top: -22%;
+			right: -29%;
+	
+		}
+	
+		.canvas-wrapper canvas{
+			width: 100%;
+		}
+	
+	
+		/* Footer */
+	
+		.lp_footer {
+			background-color: #f9f9f9;
+			height: 100vh;
+		}
+	
+
+}
 
 
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
 
-
-
-/* intiatives (LoopWe) */
-
-
-	.mySlides{
-		/* display: none; */
+	.topnav{
+		/* background-color: black!important; */
 	}
 
-	.lpWE-area {
-		margin-top: 0px;
+	#myTopnav > li.viewjobsbtn > a > img{
+		height: 22px;
 	}
 
-	.slideshow-container {
-		width: 100%;
-		flex-direction: column;
+	.logoLoopMe{
+		width: 130px;
 	}
 
-	.mySlides {
-		height: 100%;
-		width: 90%;
+	.homeMain{
+		margin-top: 40%;
 	}
-
-	.lpWe_text {
-		/* position: relative; */
-		/* top: 0%; */
-		/* left: 7%; */
-		width: 100%;
-		/* background-color: green; */
-	}
-
-	.headerLpWe {
-		text-align: left;
-		font-weight: 700;
-		font-size: 42px;
-		line-height: 50px;
-		margin-bottom: 5%;
-	}
-
-	.textLpWe {
-		color: #333333;
-		text-align: left;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 24px;
-	}
-
-	.SlideShowImg {
-		position: relative;
-		top: 0%;
-		width: 80%;
-	}
-
 
 	.LpWe_dots{
-		display: flex;
-		flex-direction: row;
-		max-width: 100vw;
-		justify-content: space-evenly;
-		margin-top: 0;
-	}
-	
-	.dot_text{
-		display: none;
+		margin-top: 36%!important;
 	}
 
-	.dotLpWe {
-		height: 32px;
-		width: 32px;
-		margin: 14px;
+	.dotLpWe{
+		height: 38px!important;
+    	width: 38px!important;
 	}
 
-/* Benefits */
-
-	.Benefits-dotLpWe {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 36px;
-		width: 36px;
-		margin: 10px;
-	}
-
-	.benefits-SlideShowImg{
-		width: 32px;
-		height: 32px;
-	}
-
-	.benefits-SlideShowMainImg{
-		max-width: 100%;
-	}
-
-
-/* Hiring */
-
-	.hiring-area {
-		padding: 0;
-	}
-
-	.hiring_container {
-		border-radius: 24px;
-		padding: 13px;
-
-	}
-
-	#myUL .list_hiring {
-		height: 19vh;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.hiring_search_filter_container {
-		padding: 0px;
-	}
-
-	.search{
-		width: 100%;
-	}
-	
-	.filter {
-		flex-direction: column;
-	}
-
-	.filter > * {
-		margin: 2%;
-	}
-
-	.filter_country_img {
-		/* display: none; */
-	}
-
-	.filter_country_img img {
-		max-width: 36px;
-		max-height: 36px;
+	#root > div > main > div.main_bg_3 > section > div > div:nth-child(1) > img {
+		width: 90%!important;
 	}
 
 	.dropdown-container{
-
-
+		top: 4.5%!important;
 	}
 
-	.main-button {
+	#myUL .list_hiring{
+		height: 6vh!important;
+	}
 
-		width: 100%; 
+
+
+
+	
+
+
+
+}
+
+
+
+
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 991px) {
+
+	.container-fluid{
+		padding-bottom: 70%;
+	}
+
+	.slider-style-two{
+		background-size: cover!important;
+    	height: 100vh!important;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+
+	.wwloopers-bg{
+		padding: 861px 0;
+	}
+
+	.topnav{
+		/* background-color: black!important; */
+		
+	}
+
+	.topnav li.active{
+		left: 0;
+	}
+
+	.viewjobsbtn{
+		right: 4%;
+	}
+
+	.hero-section_content{
+		transform: translate(-50%, -50%)!important;
+	}
+
+	.dropdown-container{
+		position: absolute;
+    	top: 4%;
+	}
+
+	.hiring_search_filter_container{
+		margin-bottom: 60px;
+	}
+
+	#myUL .list_hiring{
+		width: 108%;
+	}
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+
+	.topnav{
+		/* background-color: black!important; */
+	}
+
+	.slider-style-two{
+		background-size: auto;
+		height: 58vh;
+	}
+
+	.slider-area{
+		height: 52vh;
+	}
+
+	.spaceBG{
+		background-size: auto 110%;
+	}
+
+	.wwloopers-bg{
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	#sound{
+		width: 100%!important;
+	}
+
+	.lpWE-area{
+		width: 80%;
+	}
+
+	.slideshow-container{
+		width: 100%!important;
+	}
+
+	.headerLpWe{
+		font-size: 65px!important;
+	}
+
+	.SlideShowImg{
+		width: 68%!important;
+	}
+
+	.LpWe_dots{
+		margin-top: 68%;
+	}
+
+	.dotLpWe{
+		height: 50px!important;
+		width: 50px!important;
+	}
+
+	.dot_text{
+		font-size: 20px!important;
+	}
+
+	.benefits-SlideShowMainImg{
+		width: 94%!important;
+	}
+
+	.Benefits-dotLpWe{
+		width: 60px!important;
+		height: 60px!important;
+	}
+
+	.benefits-SlideShowImg{
+		width: 55px!important;
+		height: 55px!important;
+	}
+
+	.main-button .dropdown-arrow{
+		right: 3%!important;
+	}
+
+	#myUL .list_hiring{
+		height: 4vh;
+	}
+
+	.repo_tlt_pic{
+		height: 160%;
+		top: 60%;
+	}
+
+	.filter{
+		margin-top: 25px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+} 
+
+
+@media only screen and (max-width: 1365px) {
+
+	.topnav{
+		
+		/* height: 300px; */
 	}
 
 	
-	.list_hiring{
-		/* display: none!important; */
+	} 
+
+
+@media only screen and (max-width: 1440px) {
+		
+		.topnav{
+			/* background-color: blue!important; */
+			/* height: 100px; */
+			/* width: 100px; */
+		}
+
+		.hi_icon{
+			top:-15%;
+			margin-left: 33%;
+		}
+
+	
+		#sound{
+			width: 80%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.LpOverview-area .container{
+			max-width: 731px;
+		}
+
+		.grid_text{
+			max-height: 150px!important;
+		}
+
+
+
+
+		.meet-the-team-area{
+			height: 84vh;
+		}
+
+		.mtt_dots{
+			bottom: -15%;
+		}
+
+
+
+		.slideshow-container{
+			width: 62vw;
+		}
+
+
+		.headerLpWe{
+			font-size: 46px;
+		}
+
+		.textLpWe{
+			font-size: 15px;
+		}
+
+		.SlideShowImg{
+			width: 57%;
+		}
+
+		.dotLpWe{
+			height: 34px;
+			width: 34px;
+		}
+
+		.dot_text{
+			font-size: 17px;
+		}
+
+		.Benefits-dotLpWe{
+			width: 44px;
+			height: 44px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.benefits-SlideShowImg{
+			width: 38px;
+			height: 38px;
+		}
+
+		.benefits-SlideShowMainImg{
+			width: 67%;
+		}
+
+		.benefits-slideshow-container{
+
+		}
+
+		.benefits-Slides{
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
+
+
+	
+} 
+
+
+@media only screen and (max-width: 1920px) {
+
+
+		.topnav{
+			/* background-color: green; */
+			/* height: 500px; */
+			/* display: none; */
+		}
+
+		.repo-city-state{
+			line-height: 22px;
+			padding: 30px;
+			padding-left: 45px; 
+		}
+
+		#inputSearch_hiring::placeholder{
+			font-size: 20px;
+		}
+
+		.dropdown-container{
+			height: 46px;
+		}
+
+		.main-button{
+			color: darkgrey;
+			height: 100%;
+			padding-right: 0px;
+		}
+
+		#filter_loc_img{
+			height: 44px;
+		}
+
+		.dropdown-button span, .dropdown-button svg{
+			font-size: 21px;
+		}
+
+
+		.main-button .dropdown-arrow{
+			position: relative;
+    		right: -5%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+
+		/* .main-button .dropdown-arrow:hover{
+			background-color: red;
+		} */
+
+		.dropdown-list-container{
+			width: 20% 
+		}
+
+
+		.benetxt{
+			margin-top: 30px;
+		}
+
+		.benetxt span{
+			font-weight: 800;
+			text-decoration: underline;
+			
+		}
+
+		#root > div > main > div.main_bg_6 > section > div.container > div > div > div:nth-child(2){
+			margin-top: 80px;
+		}
+		
+		#root > div > main > div.main_bg_6 > section > div.container > div > div > div:nth-child(3){
+			margin-top: 80px;
+		}
+
+		#root > div > main > div.main_bg_6 > section > div.container > div > div > div:nth-child(3) > a > img{
+			margin-top: 40px;
+		}
+
+		#root > div > main > div.main_bg_6 > section > div.container > div > div > div:nth-child(3) > a > img:hover{
+			margin-top: 40px;
+			filter: brightness(110%);
+			transition: 1s;
+		}
+
+
+
+		
+	
+} 
+
+@media only screen and (min-width: 4096px) {
+
+
+	.topnav{
+		/* background-color: lightblue; */
 	}
 
-	.repo_tlt_pic {
-		display: none;
+	.logoLoopMe{
+		width: 500px;
 	}
 
-	.repo-title {
+	.nav_option a{
+		font-size: 40px;
+	}
+
+	#myTopnav > li.viewjobsbtn > a > img{
+		width: 325px;
+	}
+
+	#root > div > section.slider-area > div > div{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 3%;
+	}
+
+	.slider-style-two{
+		display: flex;
+		align-items: center;
+		
+	}
+
+	#root > div > main > div.spaceBG > section.slider-area > div > div > div > div > div > div > h1{
+		font-size: 270px;
+	}
+
+
+	.hi_icon{
+		width: 170px;
+		top:-23%;
+		left: 40%;
+	}
+
+	.slider-style-two .slider-content p{
+		line-height: 80px;
+		padding-top: 148px ;
+		font-size: 48px;
+	}
+
+	#root > div > main > div.spaceBG > section.slider-area > div > div > div > div > div > a > img{
+		margin-top: 20%;
+		width: 500px;
+	}
+
+
+
+	.wwloopers-content .section-title h2{
+		font-size: 130px;
+	}
+
+	.wwLoopers_p{
+		width:100%;
+	}
+
+	.title-style-three.white-title p{
+		line-height: 80px;
+		font-size: 40px;
+		margin-top: 78px;
+	}
+
+
+
+	#wrapper > section.hero-section > div{
 		width: 100%;
-		height: 33%;
 	}
 
-	.repo-title div {
-		background-color: #f6f6f6;
-		color: red;
+
+	#wrapper > section.hero-section > div > h1{
+		font-size: 140px;
+	}
+	
+
+	#wrapper > section.hero-section > div > p{
+		font-size: 55px;
+		line-height: 82px;
+		margin-top: 110px;
+	}
+
+
+	#wrapper > section.hero-section{
+		max-width: 48%;
+	}
+
+
+	#wrapper > section.panel.second-section > div{
+
+		height: 90vh;
+		display: flex;
+		justify-content: center;
+	}
+
+	#sound{
+	}
+
+
+
+
+	
+	.LpOverview-area .container{
+		max-width: 1800px;
+	}
+	
+
+	.grid_icon{
+		max-height: 240px;
+		max-width: 240px;
+	}
+
+
+	.section-title h2{
+		font-size: 88px;
+	}
+
+	.header_black{
+		font-size: 38px;
+		margin-top: 50px;
+	}
+
+	.carousel_meettheteam>.items_mtt{
+		max-height: 50vh;
+	}
+
+	.mtt_dots{
+		bottom: 8%;
+	}
+
+	.dot_mtt{
+		width: 70px;
+		height: 70px;
+		margin: 30px;
+	}
+
+	.caro_div{
+		margin-top: 0%;
+	}
+
+
+	.headerLpWe{
+		font-size: 86px;
+		line-height: 84px;
+	}
+
+	.textLpWe{
+		font-size: 34px;
+		line-height: 50px;
+	}
+
+	.dotLpWe{
+		width:95px;
+		height: 95px;
+	}
+	
+
+	.dot_text{
+		font-size: 34px;
+		padding-left: 30px;
+		line-height: 50px;
+	}
+
+	.LpWe_dot_{
+    	margin-top: 4%;
+	}
+
+
+	.benetxt{
+		font-size: 37px;
+		margin-top: 50px;
+	}
+
+
+	.Benefits-dotLpWe{
+		width: 100px;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
+	.benefits-SlideShowImg{
+		width: 95px;
+		height: 95px;
+	}
+
+	.benefits-SlideShowMainImg{
+		width: 2000px;
+		height: auto;
+	}
+	
+
+	#root > div > main > div.main_bg_4 > section > div.container{
+		max-width: 2500px;
+	}
+
+	#root > div > main > div.main_bg_4 > section > div.container > div.benefits-slideshow-container{
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	align-content: center;
+	}
+
+
+	#root > div > main > div.main_bg_5 > section > div.container > div.row.justify-content-center > div > div > p{
+		line-height: 45px;
+	}
+
+
+	#inputSearch_hiring{
+		font-size: 105px;
+		height: 130px;
+		text-indent: 30px;
+	}
+
+	#inputSearch_hiring::placeholder{
+		font-size: 55px;
+		text-indent: 30px;
+	}
+	
+
+
+	#inputSearch_img{
+		width: 120px;
+	}
+
+	#filter_loc_img{
+		height: 70px;
+	}
+
+	.filter_country_img img{
+		height: 70px;
+	}
+
+	.dropdown-container{
+		height: 90px;
+	}
+	
+	.main-button{
+		height: 70px;
 		width: 100%;
-		text-align: left;
+		color:grey;
+	}
+
+	.repo_tlt_pic{
+		width: 115%;
+		height: auto;
+	}
+
+	#myUL .list_hiring{
+		height: 84px;
 	}
 
 
-	.repo-city-state {
-		/* display: none; */
-		width: 100%;
-		order: 3;
-		font-size: 14px;
-		/* background-color: blue; */
-		border-top: 1px solid grey;
-		text-align: left;
-		padding-top: 5px;
-	}
 
-	.seperation_border{
-		display: none;
-	}
 
-	.repo-department {
-		font-size: 14px;
-		width: 28%;
-		text-align: left;
-		/* background-color: red; */
-		color: red;
-		order: 2;
-		position: relative;
-		top: -2%;
-		border: 0;
-    	border-right: 3px solid red;
-		/* border-spacing: 20px; */
-		/* margin-right: 10px; */
 
-	}
-
-	.repo-employ-type {
-		/* display: none; */
-		font-size: 14px;
-		order: 2;
-		/* background-color: yellow; */
-		color: red;
-		position: relative;
-		top: -22%;
-		right: -29%;
-
-	}
 
 
 
@@ -355,33 +1166,5 @@
 
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-	body{
-		/* display: none; */
-	}
 
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	body{
-		/* display: none; */
-	}
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-	body{
-		/* display: none; */
-	}
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-	body{
-		/* display: none; */
-	}
-}
