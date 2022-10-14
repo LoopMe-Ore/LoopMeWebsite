@@ -66,6 +66,8 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
     
 
     const nav = document.querySelector("header");
+    const socialLinksNav = document.getElementById("social_links");
+
     const navHeight = 70;
     // the point the scroll starts from (in px)
     let lastScrollY = 0;
@@ -80,10 +82,13 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
         // scroll down -> hide nav bar
         if (sy > lastScrollY && sy > navHeight) {
           nav.classList.add("nav-up");
+          socialLinksNav.classList.add("socialopacity");
         } 
         // scroll up -> show nav bar
         else if (sy < lastScrollY) {
           nav.classList.remove("nav-up");
+          socialLinksNav.classList.remove("socialopacity");
+          
         }
       // update current scroll point
       lastScrollY = sy 
@@ -149,7 +154,7 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
         </nav>
 
 
-        {/* <div id="social_links" className="social-links">
+        <div id="social_links" className="social-links">
 
                   <a className="container_Social" href = "mailto: contact@loopme.com"> 
                     <img className="social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/email.png" alt="Email"></img> 
@@ -176,7 +181,7 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
                   <img className = "social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/facebook_blue.png" alt="Email" ></img>
                 </a>
 
-          </div> */}
+        </div>
 
 
       </header>

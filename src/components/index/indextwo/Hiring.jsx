@@ -29,6 +29,7 @@ function Hiring({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefitsR
 			.then(response => response.json())
 			.then((data) => {
 				setAppState({ loading: false, repos: data})
+				console.log(data);
 			}
 			
 			);

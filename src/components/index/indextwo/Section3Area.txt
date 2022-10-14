@@ -1,0 +1,199 @@
+import React,{ useEffect,useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// https://codesandbox.io/s/image-sequence-onscroll-react-react-scrollmagic-forked-oxmni9?file=/src/Sequence/index.js
+// https://codesandbox.io/s/98nfs?file=/src/index.js 
+// https://codesandbox.io/s/scroll-animated-forked-ovu6q9?file=/src/index.js 
+
+function Section3Area() {
+
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.saveStyles(".container-hero div");
+
+
+
+  useEffect(()=>{
+
+    ScrollTrigger.matchMedia({
+      // 配置屏幕宽度的函数
+      "(min-width: 800px)": function () {
+        var targets = document.querySelectorAll(".container-hero div");
+    
+        // 重置容器内的所有文本块
+        targets.forEach((target) => {
+          const tl = gsap
+            .timeline({
+              defaults: { duration: 1 },
+    
+              scrollTrigger: {
+                // 容器
+                trigger: target,
+                // markers - 提供用于调试的标记
+                markers: false,
+                // scrub - 动画
+                scrub: true,
+                // start - （坐标，坐标）启动动画，
+                // 当浏览器屏幕处于所述设置下时
+                start: "center 50%",
+                // end - （坐标，坐标）以动画结束，
+                // 当浏览器屏幕处于所述设置下时
+                end: "bottom top",
+                // 果是三个，则连接触发器元件
+                pin: true
+              }
+            })
+            // 提供时间结束时的移动动画
+            .fromTo(target, { y: 25 }, { y: -25 })
+            // 提供时间结束时的移动动画
+            .from(target, { opacity: 0, duration: 0.2 }, 0)
+            // 提供结束动画的运动的动画
+            .to(target, { opacity: 0, duration: 0.2 }, 0.8);
+        });
+      },
+      // 配置屏幕宽度的函数
+      "(max-width: 799px)": function () {
+        var targets = document.querySelectorAll(".container-hero div");
+    
+        targets.forEach((target) => {
+          const tl = gsap
+            .timeline({
+              defaults: { duration: 1 },
+              scrollTrigger: {
+                // 容器
+                trigger: target,
+    
+                markers: true,
+    
+                scrub: true,
+    
+                start: "center 50%",
+    
+                end: "bottom -50%",
+    
+                pin: true
+              }
+            })
+    
+            .fromTo(target, { y: 25 }, { y: -25 })
+    
+            .from(target, { opacity: 0, duration: 0.2 }, 0)
+    
+            .to(target, { opacity: 0, duration: 0.2 }, 0.8);
+        });
+      },
+    
+      // 执行动画的主要功能
+      all: function () {
+        // 清空控制台
+        console.clear();
+    
+        // 创建标准通道
+        const canvas = document.getElementById("hero-lightpass");
+        const context = canvas.getContext("2d");
+    
+        canvas.width = 1158;
+        canvas.height = 770;
+    
+        // 照片的具体数量
+        const frameCount = 147;
+    
+        // 变量记录一个函数
+        // 返回关键帧图片
+        const currentFrame = (index) =>
+          `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${(
+            index + 1
+          )
+            // 将URL行转换为字符串
+            .toString()
+            // 将当前行添加到另一行（如有必要，可多次添加），直到给定的线达到给定的长度。
+            .padStart(4, "0")}.jpg`;
+    
+        // 旋转所有照片的质量
+        const images = [];
+    
+        // 动画从多少帧开始
+        const airpods = {
+          frame: 0
+        };
+    
+        // 把所有的照片下载下来然后扔进容器的循环
+        for (let i = 0; i < frameCount; i++) {
+          const img = new Image();
+          img.src = currentFrame(i);
+          images.push(img);
+        }
+    
+        gsap.to(airpods, {
+          frame: frameCount - 1,
+          snap: "frame",
+          scrollTrigger: {
+            scrub: 0.5
+          },
+          onUpdate: render,
+          test
+        });
+    
+        images[0].onload = render;
+        function test() {
+          console.log("1");
+        }
+        function render() {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          context.drawImage(images[airpods.frame], 0, 0);
+        }
+        // 滚动开始时缩放图像的时间线
+    
+        var tl = gsap.timeline({
+          scrollTrigger: {
+            scrub: true,
+            trigger: "#wrapper",
+            start: "top 3rem",
+            markers: true,
+            pin: true
+          }
+        });
+        // 开始设置动画
+        tl.from(
+          "#hero-lightpass",
+          {
+            scale: 1.2,
+            duration: 1
+          },
+          0
+        )
+          // 开始设置动画
+          .to(
+            "#hero-lightpass",
+            {
+              scale: 1,
+              duration: 0.25
+            },
+            0.75
+          );
+      }
+    });
+
+
+
+    },[])
+
+  return (
+	
+    <div class="bg">
+      <canvas id="hero-lightpass"></canvas>
+      <div id="container">
+        <h1>AirPods 233</h1>
+      </div>
+      <div class="container-hero">
+        <div class="h1">主动降噪 声声入耳更沉浸。</div>
+        <div class="h1">通透模式，听到周围的声音。</div>
+        <div class="h1">可选耳塞尺寸直戴着都舒服。</div>
+        <div class="h1">妙得不同凡响。</div>
+      </div>
+    </div>
+
+  )
+}
+
+export default Section3Area

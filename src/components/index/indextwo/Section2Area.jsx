@@ -17,8 +17,8 @@ function Section2Area({aboutRef={aboutRef}, initiativesRef={initiativesRef}, ben
                       <br></br>
                       <div className="wwloopers-btn">
                       
-                        {/* <img className='spinningEarth' src="https://i.loopme.me/gwd/test/LP_website/img/images/worldwideLoopers/EarthSpinning.png" alt="" /> */}
-                        <img className='spinningEarth' src="https://i.loopme.me/gwd/test/LP_website/Earth-Spinning-Loop%20(1).gif" alt="" />
+                        <img className='spinningEarth' src="https://i.loopme.me/gwd/test/LP_website/img/images/worldwideLoopers/EarthSpinning.png" alt="" />
+                        {/* <img className='spinningEarth' src="https://i.loopme.me/gwd/test/LP_website/Earth-Spinning-Loop%20(1).gif" alt="" /> */}
                       </div>
                     </div>
 

@@ -14,27 +14,45 @@ const List = (props) => {
   
   // Set search parameters
 
+  // const [searchParam] = useState(["title",
+  //                                 "employment_type",
+  //                                 "department",
+  //                                 "country",
+  //                                 "city",
+  //                                 "state",
+  //                                 "experience",
+  //                                 "function",
+  //                                 "industry"]);
+
   const [searchParam] = useState(["title",
-                                  "employment_type",
-                                  "department",
-                                  "country",
-                                  "city",
-                                  "state",
-                                  "experience",
-                                  "function",
-                                  "industry"]);
+                        "employment_type",
+                        "department",
+                        "country",
+                        "city",
+                        "state",
+                        "experience"
+                      ]);
 
  const search = (items)  => {
 
     console.log("Hiring Searching");
 
+    // console.log(items)
+    // console.log("THIS IS Q = " + q)
+    // console.log("THIS IS items = " + items)
+
+    // if (q == null) {
+      // console.log("Bfbofrsngf")
+    // }
+
     return items.filter((item) => {
         return searchParam.some((newItem) => {
+          // console.log(item[newItem])
             return (
                 item[newItem]
                     .toString()
                     .toLowerCase()
-                    .indexOf(q.toLowerCase()) > -1
+                    .indexOf(q.toLowerCase()) > -1 
             );
         });
     });
@@ -44,7 +62,7 @@ const List = (props) => {
 
   const toggleCountrySelect = (e) => {
 
-    console.log("country toggle")
+    // console.log("country toggle")
 
     let countryOptions = document.getElementById("filter_country_img").children;
 
