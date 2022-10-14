@@ -48,35 +48,35 @@ function IndexTwo(){
                 <LpOverview/> 
             </div>
 
-            {/* <div className='main_bg_2'> */}
+            <div className='main_bg_2'>
                 {/* Meet The Team */} 
-                {/* <MeetTheTeam/> */}
-            {/* </div> */}
+                <MeetTheTeam/>
+            </div>
 
-            {/* <div className='main_bg_3'> */}
+            <div className='main_bg_3'>
                 {/* Loop WE - INITIATIVES */}
-                {/* <LoopWe aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
-            {/* </div> */}
+                <LoopWe aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
+            </div>
 
-            {/* <div className='main_bg_4'> */}
+            <div className='main_bg_4'>
                 {/* Benefits */}
-                {/* <Benefits aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
-            {/* </div> */}
+                <Benefits aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
+            </div>
 
-            {/* <div className='main_bg_5'> */}
+            <div className='main_bg_5'>
                 {/* We're Hiring */}
-                {/* <Hiring aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
-            {/* </div> */}
+                <Hiring aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
+            </div>
 
-            {/* <div className='main_bg_6'> */}
+            <div className='main_bg_6'>
                 {/* Contact Us */}
-                {/* <ContactUs aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
-            {/* </div> */}
+                <ContactUs aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
+            </div>
 
         </main>
 
         {/* Footer */}
-        {/* <Footer/> */}
+        <Footer/>
 
         </>
 	

@@ -5,8 +5,6 @@ import $ from 'jquery';
 
 
 function MeetTheTeam() {
-	
-	// NOTE CSS FOR THIS IS IN CARO.SCSS
 
 	// https://codepen.io/dobladov/pen/ZOqOoa
 
@@ -124,7 +122,7 @@ function MeetTheTeam() {
 					</div>
 
 					<div class="hideRight">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File9.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File.png"></img>
 					</div>
 					
 					
