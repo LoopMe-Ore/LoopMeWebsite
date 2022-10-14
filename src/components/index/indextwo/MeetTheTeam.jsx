@@ -91,39 +91,39 @@ function MeetTheTeam() {
 				
 				<div id="carousel">
 
-					<div class="hideLeft">
+					<div className="hideLeft">
 						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File1.png"></img>
 					</div>
 
-					<div class="hideLeft">
+					<div className="hideLeft">
 						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File2.png"></img>
 					</div>
 
-					<div class="prevLeftSecond">
+					<div className="prevLeftSecond">
 						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File3.png"></img>
 					</div>
 
-					<div class="prev">
+					<div className="prev">
 						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File4.png"></img>
 					</div>
 
-					<div class="selected">
+					<div className="selected">
 						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File5.png"></img>
 					</div>
 
-					<div class="next">
+					<div className="next">
 						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File6.png"></img>
 					</div>
 
-					<div class="nextRightSecond">
+					<div className="nextRightSecond">
 						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File7.png"></img>
 					</div>
 
-					<div class="hideRight">
+					<div className="hideRight">
 						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File8.png"></img>
 					</div>
 
-					<div class="hideRight">
+					<div className="hideRight">
 						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File9.png"></img>
 					</div>
 					
@@ -131,7 +131,7 @@ function MeetTheTeam() {
 
 					</div>
 
-					<div class="buttons">
+					<div className="buttons">
 					<button id="prev">Prev</button>
 					<button id="next">Next</button>
 					</div>
