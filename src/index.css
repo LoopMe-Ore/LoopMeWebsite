@@ -91,7 +91,7 @@ h6 {
 	margin-top: 0;
 	font-style: normal;
 	font-weight: 800;
-	text-transform: normal
+	text-transform: normal;
 }
 
 h1 a,
@@ -494,7 +494,6 @@ p {
 .first:hover{
     opacity:0
 }
-  */
 
 
 
@@ -508,7 +507,7 @@ p {
 .slider-area {
 	z-index: 100;
 	height: 100vh;
-	width: 100vw
+	width: 100vw;
 }
 
 .slider-area .slick-dots li {
@@ -800,200 +799,102 @@ p {
 /* Our Values END */
 
 
-/* 6. LoopMe Overviews */
-
-/* .LpOverview-area {
-	background-color: transparent;
-	height: 100vh
-}
+/* 6. LpOverview */
 
 .LpOverview-area {
 	background-color: transparent;
-	height: 100vh
-}
-
-.LpOverview-item {
-	box-shadow: 0 1px 13px 0 rgba(12, 11, 15, .32);
-	position: relative;
-	z-index: 1
-}
-
-.LpOverview-item::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
 	height: 100%;
-	background-color: rgba(233, 163, 1, .749);
-	transition: .3s linear;
-	opacity: 0
-}
-
-.LpOverview-content {
-	position: absolute;
-	left: 30px;
-	right: 30px;
-	bottom: 35px;
-	z-index: 1;
-	transition: .3s linear
-}
-
-.LpOverview-icon {
-	margin-bottom: 20px
-}
-
-.LpOverview-content h4 {
-	font-size: 22px;
-	line-height: 1;
-	margin-bottom: 5px;
-	text-transform: uppercase
-}
-
-.LpOverview-content h4 span {
-	color: #e9a301
-}
-
-.LpOverview-content h4 a:hover {
-	color: #fff
-}
-
-.LpOverview-item:hover .LpOverview-content {
-	opacity: 0;
-	visibility: hidden
-}
-
-.LpOverview-item:hover::before {
-	opacity: 1;
-	visibility: visible
-}
-
-.LpOverview-bg {
-	/* background-image: url(./assets/img/bg/featured_game_bg.png); */
-	/* background-position: center;
-	background-size: cover;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1
-}
-
-.LpOverview-icon img {
-	display: inline-block
-}
-
-.LpOverview-area .container-full {
-	padding-left: 60px;
-	padding-right: 60px
-}
-
-.video_div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 6%;
-	width: auto;
-	height: 60%
-}
-
-.video_curve {
-	border-radius: 40px;
-	overflow: hidden;
-	position: relative;
-	z-index: 100;
-	width: 80%;
-	height: auto
-}
-
-.lp_video {
-	width: 100%
-}
-
-.lp_video_bg {
-	position: absolute;
-	height: 70%
-} */
-
-.LpOverview-area {
-	background-color: transparent;
-	height: 100vh;
-}
-
-.Overview_header{
-	margin-bottom: 6%;
+	/* background-color: #333; */
 }
 
 .LpOverview-area .container{
+	height: 90%;
+	width: 60%!important;
+	/* background-color: grey; */
+	max-width: 100vw;
+}
+
+.LpOVerviewheader p{
+	text-align: left;
+	font-size: 29px;
+	font-weight: 700;
+	font-size: 62px;
+	line-height: 68px;
+	letter-spacing: -0.01em;
+	color: #333333;
+}
+
+.LpOVerviewheader p span{
+	display: block;
+	color: red;
+	font-weight: 700;
+	font-size: 62px;
+	line-height: 68px;
+	letter-spacing: -0.01em;
+}
+
+.OverviewSection img{
+	width: 50px;
+	height: 50px;
+}
+
+.LpOverviewSections{
+	margin-top: 10%;
+	/* background-color: #1c1121; */
+	height: 70%;
+}
+
+.LpOverviewSections{
+	/* width: 100%; */
+}
+
+.OverviewSection{
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	position: relative;
+	width: 45%;
+	height: 60%;
+}
+
+.OverviewSection p{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #333333;
+}
+
+.OverviewSection p span{
+	color: red;
+}
+
+.OverviewSection:nth-child(1){
 	/* background-color: green; */
-	display: flex;
-	flex-direction: column;
+	left: 0%;
+	top: 0%;
 }
 
-.container_grid{
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 50% 50%;
-	height: 75vh;
-	column-gap: 0px;
+.OverviewSection:nth-child(2){
+	/* background-color: red; */
+	/* left: 0%; */
+	left: 50%;
+	top: -60%;
 }
 
-.grid-item{
-	display: flex;
-}
-
-.grid_text{
-	
-}
-
-.grid-item img{
-	/* display: flex;
-	justify-content: flex-start; */
-
-}
-
-.iconWrapper{
-	/* height: 100%; */
-	/* max-width: 60px; */
+.OverviewSection:nth-child(3){
 	/* background-color: blue; */
+	top: -60%;
 }
 
-.grid_icon{
-	/* position: relative;
-	bottom: 20%; */
-	max-height: 60px;
-	max-width: 60px;
-	/* margin: 2%; */
+.OverviewSection:nth-child(4){
+	/* background-color: peru; */
+	left: 50%;
+	top: -122%;
 }
 
-#overview_img_1{
-	max-width:440px;
-	max-height:207px;
-	width: auto;
-	height: auto;
-}
 
-#overview_img_2{
-	max-width:438px;
-	max-height:126px;
-	width: auto;
-	height: auto;
-}
-
-#overview_img_3{
-	max-width:431px;
-	max-height:233px;
-	width: auto;
-	height: auto;
-}
-
-#overview_img_4{
-	max-width:432px;
-	max-height:99px;
-	width: auto;
-	height: auto;
-}
 
 /* LoopMe Overview END */
 

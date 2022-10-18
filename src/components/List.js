@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import HiringDropdown from './HiringDropdown';
 import BtnDropdown from './index/indextwo/BtnDropdown';
+import $ from 'jquery'
 
 
 const List = (props) => {
@@ -33,31 +34,28 @@ const List = (props) => {
                         "experience"
                       ]);
 
- const search = (items)  => {
 
-    console.log("Hiring Searching");
 
-    // console.log(items)
-    // console.log("THIS IS Q = " + q)
-    // console.log("THIS IS items = " + items)
+  const search = (items)  => {
 
-    // if (q == null) {
-      // console.log("Bfbofrsngf")
-    // }
+      // console.log("Hiring Searching");
 
-    return items.filter((item) => {
-        return searchParam.some((newItem) => {
-          // console.log(item[newItem])
-            return (
-                item[newItem]
-                    .toString()
-                    .toLowerCase()
-                    .indexOf(q.toLowerCase()) > -1 
-            );
-        });
-    });
+      // Loading Screen
+      // setTimeout(loadingScreen, 1000);
 
-  };
+      return items.filter((item) => {
+          return searchParam.some((newItem) => {
+            // console.log(item[newItem])
+              return (
+                  item[newItem]
+                      .toString()
+                      .toLowerCase()
+                      .indexOf(q.toLowerCase()) > -1 
+              );
+          });
+      });
+
+    };
 
 
   const toggleCountrySelect = (e) => {
