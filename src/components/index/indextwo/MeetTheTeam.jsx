@@ -166,7 +166,7 @@ function MeetTheTeam() {
 					<div className="col-xl-6 col-lg-8">
 					<div className="section-title title-style-three text-center mb-70">
 						<h2 className='header_black'>Meet The Team</h2>
-						<p className='header_black'>Join Loopers across our regions and activities. </p>
+						<p className='header_black mttsubheader'>Join Loopers across our regions and activities. </p>
 					</div>
 					</div>
 				</div>
@@ -175,39 +175,39 @@ function MeetTheTeam() {
 				<div id="carousel">
 
 					<div data-name="1" className="hideLeft">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File1.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File1.png"></img>
 					</div>
 
 					<div data-name="2" className="hideLeft">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File2.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File2.png"></img>
 					</div>
 
 					<div data-name="3" className="prevLeftSecond">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File3.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File3.png"></img>
 					</div>
 
 					<div data-name="4" className="prev">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File4.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File4.png"></img>
 					</div>
 
 					<div data-name="5" className="selected">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File5.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File5.png"></img>
 					</div>
 
 					<div data-name="6" className="next">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File6.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File6.png"></img>
 					</div>
 
 					<div data-name="7" className="nextRightSecond">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File7.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File7.png"></img>
 					</div>
 
 					<div data-name="8" className="hideRight">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File8.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File8.png"></img>
 					</div>
 
 					<div data-name="9" className="hideRight">
-						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File9.png"></img>
+						<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File9.png"></img>
 					</div>
 				
 				</div>

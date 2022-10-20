@@ -197,23 +197,23 @@ function MeetTheTeam() {
 				
 					<div className="carousel_meettheteam">
 						
-						<img alt="a pic" className="items_mtt main-pos" id="1" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File1.png"  />
+						<img alt="a pic" className="items_mtt main-pos" id="1" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File1.png"  />
 
-						<img alt="a pic" className="items_mtt right-pos" id="2" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File2.png"  />
+						<img alt="a pic" className="items_mtt right-pos" id="2" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File2.png"  />
 
-						<img alt="a pic" className="items_mtt back-pos" id="3" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File3.png"  />
+						<img alt="a pic" className="items_mtt back-pos" id="3" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File3.png"  />
 
-						<img alt="a pic" className="items_mtt back-pos" id="4" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File4.png"  />	
+						<img alt="a pic" className="items_mtt back-pos" id="4" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File4.png"  />	
 
-						<img alt="a pic" className="items_mtt back-pos" id="5" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File5.png"  />						
+						<img alt="a pic" className="items_mtt back-pos" id="5" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File5.png"  />						
 
-						<img alt="a pic" className="items_mtt back-pos" id="6" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File6.png"  />						
+						<img alt="a pic" className="items_mtt back-pos" id="6" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File6.png"  />						
 
-						<img alt="a pic" className="items_mtt back-pos" id="7" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File7.png"  />						
+						<img alt="a pic" className="items_mtt back-pos" id="7" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File7.png"  />						
 
-						<img alt="a pic" className="items_mtt back-pos" id="8" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File8.png"  />						
+						<img alt="a pic" className="items_mtt back-pos" id="8" loading="lazy" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File8.png"  />						
 
-						<img alt="a pic" className="items_mtt left-pos" id="9" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/File9.png"  />						
+						<img alt="a pic" className="items_mtt left-pos" id="9" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Gallery/min_File9.png"  />						
 
 					</div>
 {/* 

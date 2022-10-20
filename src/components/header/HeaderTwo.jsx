@@ -142,7 +142,7 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
             <li className="nav_option" onClick={() => {handleScroll(contactRef.current);}}><Link to="/">Contact</Link></li>
 
             <li className="viewjobsbtn" onClick={() => {handleScroll(contactRef.current);}}>
-              <Link to="/"><img src="https://i.loopme.me/gwd/test/LP_website/img/icon/sm_viewjobsbtn_2.png" alt="Logo" /></Link>
+              <Link to="/"><img src="https://i.loopme.me/gwd/test/LP_website/img/icon/ViewJobsButton.png" alt="Logo" /></Link>
             </li>
 
             <li className="icon" onClick={() => {myFunction();}}>

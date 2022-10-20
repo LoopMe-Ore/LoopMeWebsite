@@ -131,9 +131,17 @@ class BtnDropdown extends React.Component {
       // console.log(event.target.value);
 
       // this.setSelected(event);
+      // console.log("hehe")
+      // console.log(event)
+
+      if(event === "uk"){
+
+        this.props.passData("United Kingdom")
+
+      } else{
 
       this.props.passData(event)
-      
+      }
     };
 
 

@@ -1,8 +1,10 @@
 import { data } from 'jquery';
 import React, { useEffect, useState } from 'react';
 // import './App.css';
-import List from '../../List'
+import List from '../../List';
 import withListLoading from '../../withListLoading';
+import $ from 'jquery';
+import ReactDOM from "react-dom/client";
 
 // https://www.smashingmagazine.com/2020/06/rest-api-react-fetch-axios/#comments-rest-api-react-fetch-axios
 
@@ -16,27 +18,34 @@ function Hiring({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefitsR
 
 	const [appState, setAppState] = useState({
 		loading: false,
-		repos: null,
+		repos: null
 	});
 
 	useEffect(() => {
 		
 		setAppState({ loading: true });
-		
+
 		const apiUrl = `https://apply.workable.com/api/v1/widget/accounts/loopme`;
 
 		fetch(apiUrl)
 			.then(response => response.json())
 			.then((data) => {
-				setAppState({ loading: false, repos: data})
-				console.log(data);
-			}
+				setAppState({ loading:false, repos: data});
+			})
+			.then(() => {
+				// console.log(appState.repos);
+			})
+
+		// See More Button 
+		document.addEventListener('click',(e) => {
 			
-			);
+			document.getElementById('idAllJobs').style.height = "auto";
+			// Remove Scroll Bar? Then Put back when collapse
+		});
 
 	}, [setAppState]);
 
-	
+
 
   return (
 
@@ -54,8 +63,7 @@ function Hiring({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefitsR
 		</div>
 
 {/*  */}
-		<div className='repo-container'>
-		
+		<div id="repocontainer" className='repo-container'>
         	<ListLoading isLoading={appState.loading} repos={appState.repos} />
       	</div>
 {/*  */}

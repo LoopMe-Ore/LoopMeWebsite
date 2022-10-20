@@ -35,10 +35,10 @@ function App() {
 
        {/* {loading ?  */}
 
-        {/* <div className="logoLoading" ref={container}>
-        </div>
+        {/* <div className="logoLoading" ref={container}> */}
+        {/* </div> */}
 
-        : */}
+        {/* ":" */}
 
           <HomeTwo/>
        {/* } */}

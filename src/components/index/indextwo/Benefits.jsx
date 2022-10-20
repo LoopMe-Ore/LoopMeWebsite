@@ -89,23 +89,23 @@ function Benefits({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefit
 
 				{/* <!-- Full-width images with number and caption text --> */}
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_UK.png" alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_UK_min.png" alt='' ></img>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_Ukraine.png" alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_Ukraine_min.png" alt='' ></img>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_UK.png" alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_PL.png.png" alt='' ></img>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_US.png" alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_US_min.png" alt='' ></img>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_APAC.png" alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_APAC_min.png" alt='' ></img>
 					</div>
 
 

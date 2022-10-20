@@ -6,12 +6,32 @@ import $ from 'jquery'
 
 
 const List = (props) => {
+  
 
   const { repos } = props;
+  let TempRepos = [];
+
 
   // Search
   // Set search query to empty string
   const [q, setQ] = useState("");
+
+
+  // See More Stuff
+  if (repos){
+    // console.log(repos);
+    // console.log(repos.jobs[1]);
+
+    for (let i = 0; i < repos.jobs.length; i++) {
+      // TempRepos[i] = repos.jobs[i]
+      // console.log(repos.jobs)
+
+    }
+  
+    // console.log(TempRepos[0])
+  }
+
+  
   
   // Set search parameters
 
@@ -90,6 +110,22 @@ const List = (props) => {
   // if no Jobs Available....
   if (!repos || repos.length === 0) return <p> No Jobs Available, Check Back Later </p>;
 
+    // // initialy show the first five
+  let currList = [];
+
+  if (!(!repos || repos.length === 0)){
+
+    
+
+    for (let i = 0; i < 6; i++) {
+      // console.log(repos.jobs[i])
+      currList[i] = repos.jobs[i];
+    }
+
+    // console.log(currList[0])
+    // setCurrentShown(currList)
+
+  }
 
   return (
     
@@ -166,33 +202,44 @@ const List = (props) => {
 
         </div>
 
-
+        <div className='allJobs' id='idAllJobs'>
       
         {/* SHOW MORE - https://codepen.io/dmorda/pen/AqVEXr */}
 
-        {search(repos.jobs).map((repo,i) => {
-          return (
+          {search(repos.jobs).map((repo,i) => {
             
-            <div key={i} className='list_hiring' onClick={event => window.open(repo.shortlink, '_blank').focus()}>
+            return (
+              
+              <div key={i} data-name={i} className='list_hiring' onClick={event => window.open(repo.shortlink, '_blank').focus()}>
 
-                  <div className='repo-title hiringSec'>
-                    <img alt="a pic" className="repo_tlt_pic" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/RectangleTitle.png"/>
-                    <div>{repo.title}</div>
-                  </div>
+                    <div className='repo-title hiringSec'>
+                      {/* <img alt="a pic" className="repo_tlt_pic" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/RectangleTitle.png"/> */}
+                      <div className='repo_tlt_pic'>  </div>
 
-                  <div className='repo-city-state hiringSec'> {repo.city} {repo.state} </div>
-                  <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
-                  <div className='repo-department hiringSec'> {repo.department}, {repo.function} </div>
-                  <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
-                  <div className='repo-employ-type hiringSec'> {repo.employment_type} </div>
-            </div>
-            
+                      <div>{repo.title}</div>
+                    </div>
 
-          );
+                    <div className='repo-city-state hiringSec'> {repo.city} {repo.state} </div>
+                    <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
+                    <div className='repo-department hiringSec'> {repo.department}, {repo.function} </div>
+                    <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
+                    <div className='repo-employ-type hiringSec'> {repo.employment_type} </div>
+              </div>
+              
 
-        })}
+            );
 
-    
+          })}
+
+      </div>
+
+        {/* SEE MORE BUTTON */}
+
+        <div className='seeMore'>
+          <div id ="hiringSeeMore">
+          </div>
+        </div>
+
       </div>
       
     </ul>

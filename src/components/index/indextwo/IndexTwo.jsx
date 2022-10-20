@@ -25,58 +25,58 @@ function IndexTwo(){
         <>
         {/* header-area */}
 
-        {/* <HeaderTwo aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
+        <HeaderTwo aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
 
-        {/* <main> */}
+        <main>
 
-            {/* <div className='spaceBG'> */}
+            <div className='spaceBG'>
 
                 {/* Homepage */}
-                {/* <Home/> */}
+                <Home/>
 
                 {/* Worldwide Loopers */}
-                {/* <Section2Area aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
+                <Section2Area aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
 
-            {/* </div> */}
+            </div>
 
             {/* Our Values */}
-                  {/* <Section3Area/> */}
+                  <Section3Area/>
             
-            {/* <div className='main_bg_1'> */}
+            <div className='main_bg_1'>
 
                 {/* LoopMe Overview */}
-                {/* <LpOverview/>  */}
-            {/* </div> */}
+                <LpOverview/> 
+            </div>
 
             <div className='main_bg_2'>
                 {/* Meet The Team */} 
                 <MeetTheTeam/>
             </div>
 
-            {/* <div className='main_bg_3'> */}
+            <div className='main_bg_3'>
                 {/* Loop WE - INITIATIVES */}
-                {/* <LoopWe aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
-            {/* </div> */}
+                <LoopWe aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
+            </div>
 
-            {/* <div className='main_bg_4'> */}
+            <div className='main_bg_4'>
                 {/* Benefits */}
-                {/* <Benefits aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
-            {/* </div> */}
+                <Benefits aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
+            </div>
 
-            {/* <div className='main_bg_5'> */}
+            <div className='main_bg_5'>
                 {/* We're Hiring */}
-                {/* <Hiring aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
-            {/* </div> */}
+                <Hiring aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
+            </div>
 
-            {/* <div className='main_bg_6'> */}
+            <div className='main_bg_6'>
                 {/* Contact Us */}
-                {/* <ContactUs aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/> */}
-            {/* </div> */}
+                <ContactUs aboutRef={aboutRef} initiativesRef={initiativesRef} benefitsRef={benefitsRef} contactRef={contactRef}/>
+            </div>
 
-        {/* </main> */}
+        </main>
 
         {/* Footer */}
-        {/* <Footer/> */}
+        <Footer/>
 
         </>
 	

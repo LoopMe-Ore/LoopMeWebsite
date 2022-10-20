@@ -702,6 +702,7 @@
 	}
 
 	
+	
 	} 
 
 
@@ -714,8 +715,8 @@
 		}
 
 		.hi_icon{
-			top:-15%;
-			margin-left: 33%;
+			top:-13%;
+			margin-left: 37%;
 		}
 
 	
@@ -808,6 +809,9 @@
 
 @media only screen and (max-width: 1920px) {
 
+		.hi_icon{
+			/* margin-left: 31%; */
+		}
 
 		.topnav{
 			/* background-color: green; */
@@ -872,11 +876,11 @@
 		}
 
 		#root > div > main > div.main_bg_6 > section > div.container > div > div > div:nth-child(2){
-			margin-top: 80px;
+			/* margin-top: 80px; */
 		}
 		
 		#root > div > main > div.main_bg_6 > section > div.container > div > div > div:nth-child(3){
-			margin-top: 80px;
+			/* margin-top: 80px; */
 		}
 
 		#root > div > main > div.main_bg_6 > section > div.container > div > div > div:nth-child(3) > a > img{

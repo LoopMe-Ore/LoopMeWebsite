@@ -15,7 +15,7 @@ function ContactUs({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefi
 		<div ref={contactRef} className="benefits-bg" />
 			<div className="container">
 				<div className="row justify-content-center">
-					<div className="col-xl-6 col-lg-8">
+					<div className="col-xl-6 col-lg-8 cont_tainer">
 
 					<div className="section-title title-style-three text-center bene_toptxt">
 						<h2 className='beneHeader'>Contact Us</h2>
@@ -38,7 +38,7 @@ function ContactUs({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefi
 
 					<div className="section-title title-style-three text-center bene_toptxt">
 						<h2 className='beneHeader'>Support For Ukraine</h2>
-						<a className="container_Social" href="https://loopme.com/update/" target="_blank" rel="noopener noreferrer"><span className=""/>
+						<a id= "ukraineContact" className="container_Social" href="https://loopme.com/update/" target="_blank" rel="noopener noreferrer"><span className=""/>
                     		<img src="https://i.loopme.me/gwd/test/LP_website/img/images/contactUs/Flags-Ukraine.png" alt="" />
                   		</a>
 					</div>

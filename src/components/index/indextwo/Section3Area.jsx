@@ -2,29 +2,18 @@ import React,{ useEffect,useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// https://codesandbox.io/s/image-sequence-onscroll-react-react-scrollmagic-forked-oxmni9?file=/src/Sequence/index.js
-
-
-// 2.SECOND
-// https://codesandbox.io/s/98nfs?file=/src/index.js 
-// https://codesandbox.io/s/scroll-animated-forked-ovu6q9?file=/src/index.js 
 
 function Section3Area() {
 
   gsap.registerPlugin(ScrollTrigger);
   // let tl = gsap.timeline({ defaults: { duration: 1, ease: "sine.out" } });
+  // let masterTl = gsap.timeline({ defaults: {ease: "sine.out" } });
+
+  let tl = gsap.timeline({ defaults: { duration: 1, ease: "sine.out" } });
   let masterTl = gsap.timeline({ defaults: { duration: 1, ease: "sine.out" } });
   
 
   useEffect(()=>{
-
-    console.log("RUNNNA")
-
-    // gsap.set("#circle-svg", {
-    //   attr: { viewBox: `0 0 ${window.innerWidth} ${window.innerHeight} ` }
-    // });
-
-    // gsap.set(".second-section span", { autoAlpha: 0, scale: 1 });
 
     ScrollTrigger.matchMedia({
       all: function () {
@@ -34,13 +23,26 @@ function Section3Area() {
         const canvas = document.getElementById("sound");
         const context = canvas.getContext("2d");
 
-        canvas.width = 1920;
-        canvas.height = 1080;
+        canvas.width = 1158;
+        canvas.height = 770;
 
-        const frameCount = 414;
+        const frameCount = 137;
+
+        // /img/overview_drausio/new_jpg/97.jpg
 
         const currentFrame = (index) =>
-        `https://i.loopme.me/gwd/test/LP_website/img/overview_img_1010/JPEG/0_${(index).toString()}.jpg`;
+        `https://i.loopme.me/gwd/test/LP_website/img/overview_drausio/new_jpg/${(index).toString()}.jpg`;
+        
+
+        // const currentFrame = (index) =>
+        // `https://i.loopme.me/gwd/test/LP_website/img/overview_img_1010/JPEG_Resize/JPEG/0_${(index).toString()}.jpg`;
+        
+        // const currentFrame = (index) =>
+        // `https://www.apple.com/105/media/us/airpods-3rd-generation/2021/3c0b27aa-a5fe-4365-a9ae-83c28d10fa21/anim/spatial-audio/large/${(
+        //   index + 1
+        // )
+        //   .toString()
+        //   .padStart(4, "0")}.jpg`;
 
         const images = [];
 
@@ -52,34 +54,35 @@ function Section3Area() {
           const img = new Image();
           img.src = currentFrame(i);
           images.push(img);
-          console.log(i);
+          // console.log(img)
         }
 
-        // images[0].onload = render;
+        images[0].onload = render;
 
         function render() {
           context.clearRect(0, 0, canvas.width, canvas.height);
-          context.drawImage(images[airpods.frame], 0, 0);
+          context.drawImage(images[airpods.frame], 0, 0,canvas.width,canvas.height );
         }
 
         ScrollTrigger.create({
           trigger: "#wrapper",
-          start: "top top",
+          start: "top 3rem",
+          // end:"bottom top",
           // end: "+=25000",
           end: "+=" + (window.innerHeight * 8),
-          markers: true,
+          // markers: true,
           pin: true,
           // pinSpacing: false,
-          scrub: 1,
+          scrub: true,
           immediateRender: false,
           animation: masterTl,
           anticipatePin: true
         });
 
         masterTl
-        .to(".second-section", { 
-          yPercent: -95,
-        }, "<")
+        .to(".second-section", { yPercent: -95 }, "<")
+        .to(".second-section span:first-child", { autoAlpha: 1, scale: 1 })
+        .to(".second-section span:first-child", { autoAlpha: 0 }, "-=1")
         .to(
           airpods,
           {
@@ -87,17 +90,18 @@ function Section3Area() {
             frame: frameCount - 1,
             snap: "frame",
             ease: "none",
+            duration: 3,
             onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
           },
           "<"
         )
       },
 
-    // "(min-width: 768px)": function () {
-    //   gsap.set(".hero-section_content", { xPercent: -50, yPercent: -50 });
+    "(min-width: 768px)": function () {
+      gsap.set(".hero-section_content", { xPercent: -50, yPercent: -50 });
 
-    //   tl.to(".hero-section_content", { yPercent: -78 }, "<");
-    // }
+      tl.to(".hero-section_content", { yPercent: -78 }, "<");
+    }
 
   });
 
