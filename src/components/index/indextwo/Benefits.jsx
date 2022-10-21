@@ -67,7 +67,7 @@ function Benefits({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefit
 				{/* <!-- The dots/circles --> */}
 				<div className='Benefits_dots_circles'>
 					<span className="Benefits-dotLpWe" onClick={(e) => currentSlide(1,e)}>
-						<img className="benefits-SlideShowImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Flag-UK.png" alt='' ></img>
+						<img className="benefits-SlideShowImg bene_highlight" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Flag-UK.png" alt='' ></img>
 					</span>
 					<span className="Benefits-dotLpWe" onClick={(e) => currentSlide(2,e)}>
 						<img className="benefits-SlideShowImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Flags-Ukraine.png" alt='' ></img>
@@ -97,7 +97,7 @@ function Benefits({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefit
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_PL.png.png" alt='' ></img>
+						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_PL.png" alt='' ></img>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">

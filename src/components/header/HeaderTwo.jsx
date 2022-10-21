@@ -158,27 +158,27 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
 
                   <a className="container_Social" href = "mailto: contact@loopme.com"> 
                     <img className="social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/email.png" alt="Email"></img> 
-                    <img className="social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/email_red.png" alt="Email"></img> 
+                    <img className="social_img second" src="https://i.loopme.me/gwd/test/LP_website/img/icon/email_red.png" alt="Email"></img> 
                   </a>
 
                   <a className="container_Social" href="https://twitter.com/LoopMe?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer"><span className=""/>
                     <img className = "social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/twitter_black.png" alt=" Email " ></img>
-                    <img className = "social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/twitter_blue.png" alt=" Email " ></img>
+                    <img className = "social_img second" src="https://i.loopme.me/gwd/test/LP_website/img/icon/twitter_blue.png" alt=" Email " ></img>
                   </a>
 
                 <a className="container_Social" href="https://www.linkedin.com/company/loopme/mycompany/" target="_blank" rel="noopener noreferrer"><span className=""/>
                   <img className = "social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/linkedin_black.png" alt=" Email " ></img>
-                  <img className = "social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/linkedin_blue.png" alt=" Email " ></img>
+                  <img className = "social_img second" src="https://i.loopme.me/gwd/test/LP_website/img/icon/linkedin_blue.png" alt=" Email " ></img>
                 </a>
 
                 <a className="container_Social" href="https://www.instagram.com/instaloopme/" target="_blank" rel="noopener noreferrer"><span className=""/>
                   <img className = "social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/instagram_black.png" alt=" Email " ></img>
-                  <img className = "social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/instagram_insta.png" alt=" Email " ></img>
+                  <img className = "social_img second" src="https://i.loopme.me/gwd/test/LP_website/img/icon/instagram_insta.png" alt=" Email " ></img>
                 </a>
 
                 <a className="container_Social" href="https://en-gb.facebook.com/LoopMeMedia/" target="_blank" rel="noopener noreferrer"><span className=""/>
                   <img className = "social_img first" src="https://i.loopme.me/gwd/test/LP_website/img/icon/facebook_black.png" alt="Email" ></img>
-                  <img className = "social_img" src="https://i.loopme.me/gwd/test/LP_website/img/icon/facebook_blue.png" alt="Email" ></img>
+                  <img className = "social_img second" src="https://i.loopme.me/gwd/test/LP_website/img/icon/facebook_blue.png" alt="Email" ></img>
                 </a>
 
         </div>

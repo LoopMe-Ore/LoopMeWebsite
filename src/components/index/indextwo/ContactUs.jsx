@@ -9,13 +9,10 @@ function ContactUs({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefi
 
   return (
 
-	<section ref={contactRef} className="benefits-area position-relative pt-115 pb-90 blkBg">
+	<section ref={contactRef} className="contactus">
 
-
-		<div ref={contactRef} className="benefits-bg" />
 			<div className="container">
-				<div className="row justify-content-center">
-					<div className="col-xl-6 col-lg-8 cont_tainer">
+					<div className="col-xl-6 col-lg-8">
 
 					<div className="section-title title-style-three text-center bene_toptxt">
 						<h2 className='beneHeader'>Contact Us</h2>
@@ -47,7 +44,6 @@ function ContactUs({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefi
 
 					</div>
 				</div>
-			</div>
 
 
 	</section>

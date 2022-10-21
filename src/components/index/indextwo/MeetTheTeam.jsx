@@ -12,66 +12,66 @@ function MeetTheTeam() {
 
 	function currentSlide(e_Name) {
 		$('.dotLpMTT').removeClass('dot_highlight');
-		console.log(e_Name);
+		// console.log(e_Name);
 
 		switch(e_Name) {
 			case "1":
-				console.log("oneee");
+				// console.log("oneee");
 
 				// find the div with the corresponding name to btn ID
 				moveToSelected($("#carousel div[data-name=1]"));
 
 			  break;
 			case "2":
-				console.log("2");
+				// console.log("2");
 
 				moveToSelected($("#carousel div[data-name=2]"));
 			  break;
 				
 			case "3":
-				console.log("oneeefnienpf");
+				// console.log("oneeefnienpf");
 
 				moveToSelected($("#carousel div[data-name=3]"));
 				break;
 
 			case "4":
-				console.log("one345678e");
+				// console.log("one345678e");
 
 				moveToSelected($("#carousel div[data-name=4]"));
 				break;
 
 			case "5":
-				console.log("oneee");
+				// console.log("oneee");
 
 				moveToSelected($("#carousel div[data-name=5]"));
 				break;
 
 			case "6":
-				console.log("oneee");
+				// console.log("oneee");
 
 				moveToSelected($("#carousel div[data-name=6]"));
 				break;
 
 			case "7":
-				console.log("oneee");
+				// console.log("oneee");
 
 				moveToSelected($("#carousel div[data-name=7]"));
 				break;
 
 			case "8":
-				console.log("oneee");
+				// console.log("oneee");
 
 				moveToSelected($("#carousel div[data-name=8]"));
 				break;
 
 			case "9":
-				console.log("oneee");
+				// console.log("oneee");
 
 				moveToSelected($("#carousel div[data-name=9]"));
 				break;
 
 			default:
-				console.log("Oh No :(")
+				console.log("Oh No :( Gallery Broken")
 		}
 
 

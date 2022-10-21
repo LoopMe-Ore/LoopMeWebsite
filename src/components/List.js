@@ -201,7 +201,7 @@ const List = (props) => {
           </div>
 
         </div>
-
+        
         <div className='allJobs' id='idAllJobs'>
       
         {/* SHOW MORE - https://codepen.io/dmorda/pen/AqVEXr */}

@@ -7,31 +7,42 @@ import lottie from 'lottie-web';
 function App() {
 
   const container = useRef(null);
-  const [loading,setLoading] = useState(true);
+
+  // const [loading,setLoading] = useState(true);
+
+  // const lottieAnim = lottie.loadAnimation({
+  //   container: container.current,
+  //   renderer: "svg",
+  //   loop: false,
+  //   autoplay: true,
+  //   animationData: require("./Drawing_Logo_white.json")
+  // });
+
+
 
   useEffect(()=>{
 
     // setLoading(true)
 
-    const lottieAnim = lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: false,
-      autoplay: true,
-      animationData: require("./Drawing_Logo_white.json")
-    });
+    // lottieAnim.onComplete = function() {
 
+      // console.log('complete');
 
-    lottieAnim.onComplete = function() {
-      console.log('complete');
-      setLoading(false);
-    }
+      // if (document.readyState === 'complete') {
+        // The page is fully loaded
+        // console.log('readystate');
+        // setLoading(false);
+      // }
+
+    // }
   
   },[])
 
 
   return (
     <div className="App">
+
+      <HomeTwo/>
 
        {/* {loading ?  */}
 
@@ -40,7 +51,9 @@ function App() {
 
         {/* ":" */}
 
-          <HomeTwo/>
+        {/* <div > */}
+        {/* </div> */}
+          
        {/* } */}
 
       
