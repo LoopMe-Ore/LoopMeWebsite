@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import './caro.scss'
+// import './caro.scss'
 import $ from 'jquery';
 
 
@@ -164,7 +164,7 @@ function MeetTheTeam() {
 
 				<div className="row justify-content-center marginRmv">
 					<div className="col-xl-6 col-lg-8">
-					<div className="section-title title-style-three text-center mb-70">
+					<div className="section-title title-style-three text-center">
 						<h2 className='header_black'>Meet The Team</h2>
 						<p className='header_black mttsubheader'>Join Loopers across our regions and activities. </p>
 					</div>

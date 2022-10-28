@@ -165,7 +165,7 @@ p {
 	background-color: #000;
 
 	/* background: rgba(139, 136, 136, 0.791); */
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom center;
 }
@@ -487,8 +487,8 @@ p {
     display:flex;
     flex-direction:row;
     position:fixed;
-    bottom:6%;
-    right:0;
+    bottom:8%;
+    right:-5%;
     z-index:100;
     margin-right:8%;
     height:20%;
@@ -749,7 +749,8 @@ p {
 	background-position: center;
 	background-size: cover;
 	box-shadow: 0 5px 10px 0 rgba(11, 11, 11, .52);
-	background-color: transparent
+	background-color: transparent;
+	/* height: 70vh; */
 }
 
 .wwloopers-content {
@@ -835,7 +836,7 @@ p {
 
 .LpOverview-area .container{
 	height: 90%;
-	width: 60%!important;
+	width: 60%;
 	/* background-color: grey; */
 	max-width: 100vw;
 }
@@ -936,7 +937,7 @@ p {
 
 
 .meet-the-team-area {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -1065,6 +1066,108 @@ p {
 	background-color: #717171
 }
 
+#carousel {
+	position: relative;
+	height: 90%;
+	top: 50%;
+	transform: translateY(-50%);
+	overflow: hidden;
+  }
+  #carousel div {
+	position: absolute;
+	transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+	opacity: 1;
+  }
+  #carousel div img {
+	width: 570px;
+	/* // height: 460px; */
+	transition: width 1s;
+  }
+  #carousel div.hideLeft {
+	left: 0%;
+	opacity: 0;
+	transform: translateY(50%) translateX(-50%);
+  }
+  #carousel div.hideLeft img {
+	width: 200px;
+  }
+  #carousel div.hideRight {
+	left: 100%;
+	opacity: 0;
+	transform: translateY(50%) translateX(-50%);
+  }
+  #carousel div.hideRight img {
+	width: 200px;
+  }
+  #carousel div.prev {
+	z-index: 5;
+	left: 30%;
+	transform: translateY(140px) translateX(-130%);
+  }
+  #carousel div.prev img {
+	width: 540px;
+  }
+  #carousel div.prevLeftSecond {
+	z-index: 4;
+	left: 15%;
+	transform: translateY(50%) translateX(-50%);
+	opacity: 0;
+  }
+  #carousel div.prevLeftSecond img {
+	width: 200px;
+  }
+  #carousel div.selected {
+	z-index: 10;
+	left: 50%;
+	transform: translateY(0px) translateX(-50%);
+  }
+  #carousel div.next {
+	z-index: 5;
+	left: 70%;
+	transform: translateY(140px) translateX(30%);
+  }
+  #carousel div.next img {
+	width: 540px;
+  }
+  #carousel div.nextRightSecond {
+	z-index: 4;
+	left: 85%;
+	transform: translateY(50%) translateX(-50%);
+	opacity: 0;
+  }
+  #carousel div.nextRightSecond img {
+	width: 200px;
+  }
+  
+  .MTTbuttons {
+	position: absolute;
+	/* // left: 50%; */
+	bottom: 16%;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+  
+  .dotLpMTT {
+	  cursor: pointer;
+	  height: 16px;
+	  width: 16px;
+	  margin: 14px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  transition: background-color .6s ease
+  }
+  
+  
+  
+  
+  #carousel{
+	top: 30%;
+	overflow: visible;
+  }
+
 
 /*  Meet The Team END */
 
@@ -1111,7 +1214,7 @@ p {
 }
 
 .headerLpWe{
-    color: black;
+    color: #333333;
     text-align: left;
     font-weight: 700;
     font-size: 62px;
@@ -1153,9 +1256,12 @@ p {
 	height: 52px;
 	width: 52px;
 	margin: 14px;
-	background-color: #bbb;
+	background-color: #828282;
 	border-radius: 50%;
-	transition: background-color .6s ease
+	transition: background-color .7s ease-in-out;
+	box-shadow: inset 4px 4px 15px rgba(255, 255, 255, 0.55);
+	filter: blur(2px);
+	border-radius: 26px;
 }
 
 .dot_text {
@@ -1719,7 +1825,9 @@ label {
 		background: #ED1C24;
     	backdrop-filter: blur(12px);
     	border-radius: 2px 11px 11px 11px;
-		height: 107%;
+		height: 1.7em;
+		position: relative;
+    	right: -11%;
 	}
 	
 	.list-button {
@@ -2114,4 +2222,123 @@ canvas {
 	line-height: 36px;
 	letter-spacing: 0.02em;
 	color: #BDBDBD;
+}
+
+#pinContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.panel {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.pin-spacer{
+	background-color: black;
+}
+
+.big_viewjobs{
+	background: linear-gradient(180deg, #FF362B 0%, #FF6868 100%);
+	border: 2px solid #FF8282;
+	border-radius: 36px;
+	width: 244px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 36px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(20px);
+}
+
+
+
+.LpOverviewSections_mobileGallery{
+	display: none;
+	width: auto;
+    height: auto;
+}
+
+/* LpOverview */
+
+.Lp_Overview_slideshow-container{
+    position: absolute;
+    width: 100%;
+	height: 48%;
+    /* background-color: red; */
+    display: flex;
+	flex-direction: column;
+
+}
+
+.mySlidesOverview{
+    display: flex;
+    /* background-color: blue; */
+    position: relative;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;    
+	align-items: center;
+}
+
+.lpOverview_text{
+	/* display: none; */
+    position: relative;
+    top: 0%;
+    /* left: 7%; */
+    width: 90%;
+    /* background-color: green; */
+}
+
+.SlideShowImg_Overview{
+    position: relative;
+    top: 0%;
+    width: 60px;
+}
+
+.lpOverview_dots{
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	position: absolute;
+	top: 100%;
+	justify-content: center;
+	width: 100%;
+}
+
+
+.lpOverview_dot_{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	height: 60px;
+}
+
+.dotLpOverview {
+	cursor: pointer;
+	height: 18px;
+	width: 18px;
+	margin: 14px;
+	background-color: #828282;
+	border-radius: 50%;
+	transition: background-color .7s ease-in-out;
+	box-shadow: inset 4px 4px 15px rgba(255, 255, 255, 0.55);
+	filter: blur(2px);
+	border-radius: 26px;
+}
+
+.dotLpOverview:hover {
+	background-color: #717171
+}
+
+.textlpOverview{
+	font-size: 18px;
+    line-height: 22px;
+	text-align: center;
+	color: #333333;
 }

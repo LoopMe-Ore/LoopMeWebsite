@@ -89,10 +89,43 @@ function Benefits({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefit
 
 				{/* <!-- Full-width images with number and caption text --> */}
 					<div className="benefits-Slides fadeLpWe">
-						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_UK_min.png" alt='' ></img>
+						<picture className="benefits-SlideShowMainImg">
+							<source media="(max-width:414px)" srcSet="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Mobile_Benefits_UK.png"></source>
+							<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_UK_min.png" alt='' ></img>
+						</picture>
 					</div>
 
 					<div className="benefits-Slides fadeLpWe">
+						<picture className="benefits-SlideShowMainImg">
+							<source media="(max-width:414px)" srcSet="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Mobile_Benefits_UK.png"></source>
+							<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_Ukraine_min.png" alt='' ></img>
+						</picture>
+					</div>
+
+					<div className="benefits-Slides fadeLpWe">
+						<picture className="benefits-SlideShowMainImg">
+							<source media="(max-width:414px)" srcSet="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Mobile_Benefits_UK.png"></source>
+							<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_PL.png" alt='' ></img>
+						</picture>
+					</div>
+
+					<div className="benefits-Slides fadeLpWe">
+						<picture className="benefits-SlideShowMainImg">
+							<source media="(max-width:414px)" srcSet="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Mobile_Benefits_UK.png"></source>
+							<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_US_min.png" alt='' ></img>
+						</picture>
+					</div>
+
+					<div className="benefits-Slides fadeLpWe">
+						<picture className="benefits-SlideShowMainImg">
+							<source media="(max-width:414px)" srcSet="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Mobile_Benefits_UK.png"></source>
+							<img src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_APAC_min.png" alt='' ></img>
+						</picture>
+					</div>
+
+					
+
+					{/* <div className="benefits-Slides fadeLpWe">
 						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_Ukraine_min.png" alt='' ></img>
 					</div>
 
@@ -106,7 +139,7 @@ function Benefits({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefit
 
 					<div className="benefits-Slides fadeLpWe">
 						<img className="benefits-SlideShowMainImg" src="https://i.loopme.me/gwd/test/LP_website/img/images/Benefits/Benefits_APAC_min.png" alt='' ></img>
-					</div>
+					</div> */}
 
 
 				</div>

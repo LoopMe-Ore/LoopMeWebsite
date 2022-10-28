@@ -80,7 +80,10 @@ function Home() {
                         {/* </Fade> */}
           
                         {/* <Fade up delay={.8000}> */}
-                          <a href="/#"><span className=""/><img src="https://i.loopme.me/gwd/test/LP_website/img/slider/ViewJobsButtonBig.png" alt="View Jobs" ></img></a>
+                          {/* <a href="/#"><span className=""/><img src="https://i.loopme.me/gwd/test/LP_website/img/slider/ViewJobsButtonBig.png" alt="View Jobs" ></img></a> */}
+                          <div className='big_viewjobs'>
+                            View Jobs
+                          </div>
                         {/* </Fade> */}
 
                         

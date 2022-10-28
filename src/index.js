@@ -1,15 +1,18 @@
+// Developed by Ore Yusuf
+// oreoluwa.yusuf@loopme.com
+
 import React from 'react';
 
 import ReactDOM from "react-dom/client";
 import { BrowserRouter,StaticRouter } from "react-router-dom";
 
-import './index.css';
 import './responsive.css';
-import './assets/css/bootstrap.min.css'
-import './assets/css/meanmenu.css'
-import './assets/css/slick.css'
-import './assets/css/default.css'
-import './assets/css/magnific-popup.css'
+import './index.css';
+import './assets/css/bootstrap.min.css';
+import './assets/css/meanmenu.css';
+import './assets/css/slick.css';
+import './assets/css/default.css';
+import './assets/css/magnific-popup.css';
 
 import App from './App';
 // import reportWebVitals from './reportWebVitals';

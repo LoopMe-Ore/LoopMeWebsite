@@ -204,7 +204,7 @@ const List = (props) => {
         
         <div className='allJobs' id='idAllJobs'>
       
-        {/* SHOW MORE - https://codepen.io/dmorda/pen/AqVEXr */}
+          
 
           {search(repos.jobs).map((repo,i) => {
             
@@ -231,7 +231,7 @@ const List = (props) => {
 
           })}
 
-      </div>
+        </div>
 
         {/* SEE MORE BUTTON */}
 
