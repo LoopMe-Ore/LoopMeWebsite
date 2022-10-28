@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/LoopMeWebsite/static/css/main.570d4ce1.css",
-    "main.js": "/LoopMeWebsite/static/js/main.620a7f60.js",
+    "main.css": "/LoopMeWebsite/static/css/main.62589ddb.css",
+    "main.js": "/LoopMeWebsite/static/js/main.61b2ce3a.js",
     "index.html": "/LoopMeWebsite/index.html",
-    "main.570d4ce1.css.map": "/LoopMeWebsite/static/css/main.570d4ce1.css.map",
-    "main.620a7f60.js.map": "/LoopMeWebsite/static/js/main.620a7f60.js.map"
+    "main.62589ddb.css.map": "/LoopMeWebsite/static/css/main.62589ddb.css.map",
+    "main.61b2ce3a.js.map": "/LoopMeWebsite/static/js/main.61b2ce3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.570d4ce1.css",
-    "static/js/main.620a7f60.js"
+    "static/css/main.62589ddb.css",
+    "static/js/main.61b2ce3a.js"
   ]
 }
