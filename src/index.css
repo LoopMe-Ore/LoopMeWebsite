@@ -65,6 +65,10 @@ html {
 	caret-color: red!important;
 }
 
+.App{
+	
+}
+
 
 .button,
 a {
@@ -165,9 +169,10 @@ p {
 	background-color: #000;
 
 	/* background: rgba(139, 136, 136, 0.791); */
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom center;
+	background-blend-mode: lighten;
 }
 
 
@@ -431,6 +436,42 @@ p {
   .viewjobsbtn{
 	position: absolute;
 	right: 15%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	/* gap: 10px; */
+
+	width: 122px;
+	height: 24px;
+
+	/* Button Fill Gradient */
+
+	background: linear-gradient(180deg, #FF362B 0%, #FF6868 100%);
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 72px;
+	/* padding: 0!important; */
+	white-space: nowrap;
+	
+  }
+
+  .viewjobsbtn p{
+	width: 75px;
+	height: 38px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 38px;
+	/* identical to box height, or 234% */
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin:0;
   }
 
 
@@ -922,6 +963,33 @@ p {
 	top: -122%;
 }
 
+.LpOverviewSections .css-1gzxeik{
+	position: relative;
+}
+
+.LpOverviewSections .css-1gzxeik:nth-child(1){
+	/* background-color: red; */
+	left: 0%;
+	top: 0%;
+}
+
+.LpOverviewSections .css-1gzxeik:nth-child(2){
+	/* background-color: green; */
+	left: 50%;
+	top: -52%;
+}
+
+.LpOverviewSections .css-1gzxeik:nth-child(3){
+	/* background-color: gold; */
+	top: -40%;
+}
+
+
+.LpOverviewSections .css-1gzxeik:nth-child(4){
+	/* background-color: peru; */
+	left: 50%;
+	top: -67%;
+}
 
 
 /* LoopMe Overview END */
@@ -1068,7 +1136,7 @@ p {
 
 #carousel {
 	position: relative;
-	height: 90%;
+	height: 60%;
 	top: 50%;
 	transform: translateY(-50%);
 	overflow: hidden;
@@ -1330,11 +1398,11 @@ p {
 }
 
 .beneHeader {
-	color: #333 !important
+	color: #333 !important;
 }
 
 .benetxt {
-	color: #333 !important
+	color: #333 !important;
 }
 
 .Benefits_dots_circles {
@@ -1635,6 +1703,11 @@ label {
 	color: #000;
 	cursor: pointer;
 	z-index: 0;
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(2px);
+	/* Note: backdrop-filter has minimal browser support */
+	border-radius: 12px;
 }
 
 .seeMore{
@@ -1895,7 +1968,6 @@ label {
 /* 11. Contact Us */
 
 .contactus{
-	padding-top: 10%;
 	height: 100%;
 }
 
@@ -1916,14 +1988,16 @@ label {
 
 .contactus .container .col-xl-6{
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-evenly;
 }
 
 .contactus .container{
 	display: flex;
 	justify-content: center;
+	max-width: 100%;
 }
 
 /* Contact Us END */
@@ -2342,3 +2416,62 @@ canvas {
 	text-align: center;
 	color: #333333;
 }
+
+.contactHeaders{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 62px;
+	line-height: 68px;
+	/* identical to box height, or 110% */
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.01em;
+	color: #333333;
+}
+
+.cu_txt{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: #1D1D1D;
+}
+
+.cu_txt span{
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+
+/*  */
+
+.loader {
+	position: absolute;
+	top: calc(50% - 4em);
+	left: calc(50% - 4em);
+	width: 6em;
+	height: 6em;
+	border: 1.1em solid red;
+	border-left: 1.1em solid whitesmoke;
+	border-radius: 50%;
+	animation: load8 1.1s infinite linear;
+	transition: opacity 0.5s;
+  }
+  
+  .loader--hide {
+	opacity: 0;
+  }
+  
+  @keyframes load8 {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }

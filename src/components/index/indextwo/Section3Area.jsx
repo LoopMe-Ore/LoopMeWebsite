@@ -1,7 +1,7 @@
 import React,{ useEffect,useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import {Fade} from "react-awesome-reveal";
 
 function Section3Area() {
 
@@ -116,11 +116,12 @@ function Section3Area() {
         <div className="sub-header"></div>
 
         <section className="hero-section">
-        
+        <Fade>
           <div className="hero-section_content">
             <h1 className="font-xxl">Our Values</h1>
             <p className="font-s">This is why we’re committing to nurturing an inclusive and diverse global team. We know that diversity drives innovation, which is why we deeply value your perspective and have built a culture in which you can do your very best work.</p>
           </div>
+          </Fade>
         </section>
 
         <section className="panel second-section">

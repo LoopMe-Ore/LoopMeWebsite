@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {Fade} from "react-awesome-reveal";
 
 
 function Section2Area({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefitsRef={benefitsRef}, contactRef={contactRef}}) {
@@ -16,7 +17,6 @@ function Section2Area({aboutRef={aboutRef}, initiativesRef={initiativesRef}, ben
                       <p className="wwLoopers_p">We’re a globally connected and collaborative business with Loopers in London, New York, Boston, Atlanta, Chicago, Detroit, San Francisco, Los Angeles, Toronto, Singapore, Sydney, Tokyo, Dnipro, Krakow and Hong Kong.</p>
                       <br></br>
                       <div className="wwloopers-btn">
-                      
                         {/* <img className='spinningEarth' src="https://i.loopme.me/gwd/test/LP_website/img/images/worldwideLoopers/EarthSpinning.png" alt="" /> */}
                         <img className='spinningEarth' src="https://i.loopme.me/gwd/test/LP_website/img/images/worldwideLoopers/Earth_Spinning_Loop_1__4.gif" alt="" />
                       </div>

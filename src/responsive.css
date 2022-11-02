@@ -62,6 +62,8 @@
 }
 
 
+
+
 @media only screen and (max-width: 1440px) {
 		
 	.topnav{
@@ -608,7 +610,7 @@
 	}
 
 	#myUL .list_hiring {
-		height: 11vh!important;
+		height: 13vh!important;
 		flex-direction: column!important;
 		align-items: flex-start!important;
 	}
@@ -760,6 +762,135 @@
 	.allJobs{
 		padding-right: 12px!important;
 	}
+
+
+	/* Mobile Hiring */
+
+
+	.mobile_title{
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		display: flex;
+		align-items: center;
+		color: #ED1C24;
+	}
+
+	.mobile_section2{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		border-bottom: 0.1em solid #828282!important;
+		padding-bottom: 1px;
+	}
+
+	.mobile_section2>*{
+		height: 50%;
+	}
+
+	.mobile_city_state{
+		border-right: 1px solid red!important;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		color: #ED1C24;
+		padding-right: 9px;
+	}
+
+	.mobile_employmenttype{
+		font-weight: 400;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		color: #ED1C24;
+		padding-left: 9px;
+	}
+
+	.mobile_section3{
+		display: flex;
+		align-items: center;
+	}
+
+	.mobile_section3 div{	
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		color: #828282;
+		height: 40px;
+	}
+
+	.mobile_section3 div > *{
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+		border-right: 1px solid #828282;
+		padding-right: 9px;
+		height: 40%;
+	}
+
+	.mobile_section3 div:nth-child(3){
+		padding-left: 9px;
+		border: none!important;
+	}
+
+	.mobile_section3 div:nth-child(2){
+		padding-left: 9px;
+	}
+
+	/* contact us */
+	.cu_txt br{
+		display: none;
+	}
+
+	.contactus .container .col-xl-6{
+		justify-content: center!important;
+	}
+
+	.main_bg_6{
+		height: auto!important;
+	}
+
+	.lp_footer{
+		height: auto!important;
+		margin-top: 50%;
+		background-color: none;
+	}
+
+	.footer-top{
+		margin-bottom: 27%;
+		margin-top: 27%
+	}
+
+	.footer-text p{
+		font-weight: 400;
+		font-size: 6px!important;
+		line-height: 18px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #6B6B6B;
+		width: 80%;
+	}
+
+	.App{
+		background-color: #e8e7e8;
+	}
+
+	.viewjobsbtn{
+		display: none!important;
+	}
+
+
+
+
+
+	
 
 
 

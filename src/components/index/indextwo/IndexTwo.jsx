@@ -20,6 +20,7 @@ function IndexTwo(){
     const benefitsRef = useRef(null); //represents benefits
     const contactRef = useRef(null); //represents contact
 
+
 	return(  
     
         <>

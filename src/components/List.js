@@ -31,6 +31,7 @@ const List = (props) => {
     // console.log(TempRepos[0])
   }
 
+  // console.log(repos)
   
   
   // Set search parameters
@@ -203,33 +204,74 @@ const List = (props) => {
         </div>
         
         <div className='allJobs' id='idAllJobs'>
-      
-          
-
-          {search(repos.jobs).map((repo,i) => {
             
-            return (
-              
-              <div key={i} data-name={i} className='list_hiring' onClick={event => window.open(repo.shortlink, '_blank').focus()}>
+        {(() => {
+          if (window.matchMedia("(max-width: 414px)").matches) {
 
-                    <div className='repo-title hiringSec'>
-                      {/* <img alt="a pic" className="repo_tlt_pic" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/RectangleTitle.png"/> */}
-                      <div className='repo_tlt_pic'>  </div>
+            return(
 
-                      <div>{repo.title}</div>
-                    </div>
+                search(repos.jobs).map((repo,i) => {
+                
+                return (
+                  
+                  <div key={i} data-name={i} className='list_hiring' onClick={event => window.open(repo.shortlink, '_blank').focus()}>
 
-                    <div className='repo-city-state hiringSec'> {repo.city} {repo.state} </div>
-                    <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
-                    <div className='repo-department hiringSec'> {repo.department}, {repo.function} </div>
-                    <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
-                    <div className='repo-employ-type hiringSec'> {repo.employment_type} </div>
-              </div>
-              
+                        <div className='mobile_title'>{repo.title}</div>
 
-            );
+                        <div className='mobile_section2'>
+                          <div className='mobile_city_state'> {repo.department} {", " + repo.function} </div>
+                          <div className='mobile_employmenttype'> {repo.employment_type} </div>
+                        </div>
 
-          })}
+                        <div className='mobile_section3'>
+                          <div>
+                            <div className='mobile_city'>{repo.city}</div>
+                            <div className='mobile_state'>{repo.state} </div>
+                            <div className='mobile_country'>{repo.country}</div>
+                          </div>
+                        </div>
+
+                        {/* <div className='repo-city-state hiringSec'> {repo.city} {repo.state} </div>
+                        <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
+                        <div className='repo-department hiringSec'> {repo.department}, {repo.function} </div>
+                        <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
+                        <div className='repo-employ-type hiringSec'> {repo.employment_type} </div> */}
+                  </div>
+                );
+              })
+            )
+
+
+          } else {
+            
+            return(
+
+                search(repos.jobs).map((repo,i) => {
+                
+                return (
+                  
+                  <div key={i} data-name={i} className='list_hiring' onClick={event => window.open(repo.shortlink, '_blank').focus()}>
+
+                        <div className='repo-title hiringSec'>
+                          {/* <img alt="a pic" className="repo_tlt_pic" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/RectangleTitle.png"/> */}
+                          <div className='repo_tlt_pic'>  </div>
+
+                          <div>{repo.title}</div>
+                        </div>
+
+                        <div className='repo-city-state hiringSec'> {repo.city} {repo.state} </div>
+                        <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
+                        <div className='repo-department hiringSec'> {repo.department}, {repo.function} </div>
+                        <img alt="border" className="seperation_border" loading="eager" src="https://i.loopme.me/gwd/test/LP_website/img/images/Hiring/Vector12.png"/>
+                        <div className='repo-employ-type hiringSec'> {repo.employment_type} </div>
+                  </div>
+                );
+              })
+            )
+          }
+        })()}
+            
+            
 
         </div>
 

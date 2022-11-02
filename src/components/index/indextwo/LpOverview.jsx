@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import $ from 'jquery';
-
+import {Fade} from "react-awesome-reveal";
 
 function LpOverview() {
 
@@ -46,6 +46,7 @@ function LpOverview() {
 
   
   return (
+    
 	 <section className="LpOverview-area position-relative pt-115 pb-90">
 
 
@@ -57,6 +58,7 @@ function LpOverview() {
 
                   <div className='LpOverviewSections'>
 
+                  <Fade cascade damping={0.2}>
                     <div className='OverviewSection'>
                       <img src="https://i.loopme.me/gwd/test/LP_website/img/images/Overview/icon_1.png"></img>
                       <p>Our PurchaseLoop product suite is fundamentally changing the way digital advertisers can measure the outcomes that matter. LoopMe&#39;s AI-powered Intelligent Marketplace drives more effective supply and demand connections, rooted in programmatic delivery.Our customers come first and we channel our core values into delivering meaningful results that best serve their needs. We have an NPS score of 76, have been profitable for <span>3+ years</span> and we&#39;re growing at a rate of &gt; <span>50% year-on-year</span>, so we think this speaks for itself! </p>
@@ -76,6 +78,7 @@ function LpOverview() {
                       <img src="https://i.loopme.me/gwd/test/LP_website/img/images/Overview/icon_4.png"></img>
                       <p>We&#39;re always on the lookout for those that share our values; we know how much of a massive impact you can make to everyone around you. Because of this, we offer all employees <span>equity</span> right from day one.</p>
                     </div>
+                  </Fade>
                   </div>
 
 

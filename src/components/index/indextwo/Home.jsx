@@ -1,6 +1,6 @@
 import React from 'react';
 // import Slider from 'react-slick';
-// import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 // import Slide from "react-reveal/Slide";
 
 
@@ -60,15 +60,15 @@ function Home() {
 
 <section className="slider-area">
             {/* <Slider className="slider-active" {...settings}> */}
-
+          
             <div className="single-slider slider-bg slider-style-two">
                 <div className="container-fluid container-full-padding">
 
                   <div className="row homeMain">
                     <div className="col-xl-7 col-lg-7 col-md-11">
                       <div className="slider-content ">
-
-                        {/* <Fade up delay={.4000}> */}
+                      <Fade>
+                        {/* <Fade up delay={.5000}> */}
                           <div className='fade_1'>
                             <h1 className='homepageHeader' >Hello!</h1>
                             <img className='hi_icon' src= "https://i.loopme.me/gwd/test/LP_website/img/slider/Hi_Icon.png" alt="" />
@@ -84,7 +84,7 @@ function Home() {
                           <div className='big_viewjobs'>
                             View Jobs
                           </div>
-                        {/* </Fade> */}
+                        </Fade>
 
                         
                       </div>
@@ -93,7 +93,7 @@ function Home() {
 
                 </div>
               </div>
-
+            {/* </Fade> */}
           </section>
   )
 }
