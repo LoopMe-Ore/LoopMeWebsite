@@ -4,6 +4,8 @@ import React, { useEffect, useState, useRef, Suspense } from 'react';
 import lottie from 'lottie-web';
 
 
+// NOT USED
+
 function App() {
 
   useEffect(()=>{

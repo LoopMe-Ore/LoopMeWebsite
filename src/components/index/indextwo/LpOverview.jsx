@@ -53,7 +53,7 @@ function LpOverview() {
               <div className="container">
 
                 <div className='LpOVerviewheader'>
-                    <p> <span>Thinking of becoming a Looper?</span> You should! We&#39;re committed to making an impact whether it&#39;s for our clients, our people or our communities. </p>
+                    <p> <span>Thinking of becoming a Looper?</span> You should! We&#39;re committed to making <br></br> an impact whether it&#39;s for our clients,<br></br> our people or our communities. </p>
                   </div>
 
                   <div className='LpOverviewSections'>

@@ -1,4 +1,4 @@
-import React, { useRef }  from 'react';
+import React, { useEffect, useRef }  from 'react';
 import HeaderTwo from '../../header/HeaderTwo';
 import Home from './Home';
 import Section2Area from './Section2Area';
@@ -12,7 +12,6 @@ import Hiring from './Hiring';
 import Footer from '../../footer/Footer';
 
 
-
 function IndexTwo(){
 
     const aboutRef = useRef(null); //represents about section
@@ -20,8 +19,7 @@ function IndexTwo(){
     const benefitsRef = useRef(null); //represents benefits
     const contactRef = useRef(null); //represents contact
 
-
-	return(  
+    return(  
     
         <>
         {/* header-area */}
@@ -85,3 +83,4 @@ function IndexTwo(){
 }
 	
 export default IndexTwo
+

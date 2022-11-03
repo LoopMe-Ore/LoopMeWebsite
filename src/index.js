@@ -19,7 +19,7 @@ import './assets/css/magnific-popup.css';
 
 import HomeTwo from './pages/homes/HomeTwo';
 
-import lottie from 'lottie-web';
+import createScrollSnap from 'scroll-snap'
 
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
@@ -41,9 +41,13 @@ import lottie from 'lottie-web';
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals(console.log);
 
+
+
+
+
 const loader = document.querySelector('.loader');
 
-// if you want to show the loader when React loads data again
+// // if you want to show the loader when React loads data again
 const showLoader = () => loader.classList.remove('loader--hide');
 
 const hideLoader = () => loader.classList.add('loader--hide');
@@ -53,16 +57,17 @@ const App = ({ hideLoader }) => {
   const container = useRef(null);
 
   useEffect(hideLoader, []);
-  
+
   return (
-    <div className="App">
+    <div className="App" ref={container}>
       <HomeTwo/>
-      {/* <div>I'm the app</div> */}
+      
+
     </div>
   ); 
 }
 
-// the setTimeout simulates the time it takes react to load, and is not part of the solution
+// // the setTimeout simulates the time it takes react to load
 setTimeout(() => 
   // the show/hide functions are passed as props
   ReactDOM.render(
