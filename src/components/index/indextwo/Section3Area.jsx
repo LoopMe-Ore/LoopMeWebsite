@@ -74,7 +74,7 @@ function Section3Area() {
           pin: true,
           // pinSpacing: false,
           scrub: true,
-          immediateRender: false,
+          immediateRender: true,
           animation: masterTl,
           anticipatePin: true
         });

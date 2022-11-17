@@ -93,6 +93,12 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
       // update current scroll point
       lastScrollY = sy 
       }
+
+      // Fade after a while
+      // setInterval(function() {
+      //   socialLinksNav.classList.add("socialopacity");
+      // }, 50)
+      
     }
 
     // Add event listener & debounce so not constantly checking for scroll
@@ -103,6 +109,7 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
 
     setInterval(function() {
       if (didScroll) {
+        // socialLinksNav.classList.remove("socialopacity");
         scrolled();
         didScroll = false;
       }
@@ -150,6 +157,7 @@ export default function HeaderTwo({aboutRef={aboutRef}, initiativesRef={initiati
 
             <li className="icon" onClick={() => {myFunction();}}>
               <img id="openclosebtn" src="https://i.loopme.me/gwd/test/LP_website/img/icon/CircleMenuBtn.png" alt="Logo" />
+              <img id="closebtn" src="https://i.loopme.me/gwd/test/LP_website/img/icon/CancelButton.png" alt="Logo" />
             </li>
 
 

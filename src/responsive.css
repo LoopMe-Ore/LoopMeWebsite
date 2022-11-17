@@ -147,7 +147,7 @@
 
 	.hi_icon{
 		top:-13%;
-		margin-left: 37%;
+		margin-left: 37%!important;
 	}
 
 	.LpOVerviewheader p{
@@ -193,6 +193,23 @@
 		width: 62vw;
 	}
 
+    .spaceBG{
+        background-size: 100% 61%!important;
+    }
+
+    .LpOVerviewheader p {
+        font-size: 44px!important;
+        line-height: 47px!important;
+    }
+
+    .OverviewSection p{
+        font-size: 13px!important;
+    }
+
+    #carousel div img{
+        width: 500px!important;
+    }
+
 }
 
 
@@ -202,24 +219,113 @@
 @media only screen and (max-width: 1366px) {
 
 	.topnav li.active{
-		left: 8%;
+		left: 10%!important;
 	}
 
 	.logoLoopMe{
-		width: 174px;
+		width: 168px!important;
 	}
 
 	.slider-style-two{
-		padding-top: 235px;
+		padding-top: 235px!important;;
 	}
+
+    .viewjobsbtn {
+
+        width: 111px!important;
+        height: 14px!important;
+    }
+
+    .viewjobsbtn p{
+        font-size: 15px;
+    }
+
+    .social_img{
+        min-width: 32px!important;
+    }
+
+    .second{
+        min-width: 32px!important;
+    }
+
+    .big_viewjobs {
+        width: 215px!important;
+        height: 52px!important;
+    }
+
+
+	canvas {
+		width: 84%!important;
+		height: auto!important;
+	}
+
+    .LpOverviewSections .css-1gzxeik:nth-child(2){
+        top: -58%!important;
+    }
+
+    .LpOverviewSections .css-1gzxeik:nth-child(3){
+		top: -50%!important;
+    }
+
+    .LpOverviewSections .css-1gzxeik:nth-child(4){
+        top: -78%!important;
+    }
+
+    .headerLpWe{
+        font-size: 41px!important;
+    }
+
+    .slideshow-container{
+        width: 68vw!important;
+    }
+
+    .lpWE-area{
+        margin-top: 0px!important;
+    }
+
+    #carousel div.next{
+        transform: translateY(64px) translateX(30%)!important;
+    }
+
+    #carousel div.prev{
+        transform: translateY(64px) translateX(-130%);
+    }
+
+    .SlideShowImg{
+        width: 60%!important;
+    }
+
+    .textLpWe{
+        font-size: 12px;
+    }
+
+    .lpWE-area {
+        margin-top: 143px!important;
+    }
+
+    .LpWe_dots{
+        margin-top: 8%!important;
+    }
+
+    .Benefits_dots_circles{
+        margin-bottom: 3%;   
+    }
+
+    .benefits-SlideShowMainImg{
+        max-height: 60%!important;
+    }
+
+
+
+
 
 
 	.MTTbuttons{
-		bottom: -1%;
+		bottom: -1%!important;;
 	}
 
 	#carousel div img{
-		width: 417px;
+		width: 417px!important;;
 	}
 
 	.LpOverview-area .container{
@@ -227,11 +333,11 @@
 	}
 
 	.LpOverviewSections{
-		margin-top: 7%;
+		margin-top: 7%!important;
 	}
 
 	#carousel{
-		transform: translateY(-36%);
+		transform: translateY(-36%)!important;
 	}
 
 
@@ -272,6 +378,23 @@
 
 @media only screen and (max-width: 1024px) {
 
+    .container_Social{
+        margin: 10%!important;
+    }
+
+    .topnav li{
+        padding-right: 23px!important;
+        padding-left: 23px!important;
+    }
+
+    .topnav li.active {
+        left: 5%!important;
+    }
+
+    .logoLoopMe {
+        width: 143px!important;
+    }
+
 	.logoLoopMe{
 		width: 141px;
 	}
@@ -280,9 +403,12 @@
 		right: 7%;
 	}
 
+    .viewjobsbtn{
+        right: 10%!important;
+    }
+
 	.container_Social{
 		margin: 10%;
-
 	}
 
 	canvas{
@@ -307,10 +433,37 @@
 		font-size: 5px;
 	}
 
+    .LpOVerviewheader p{
+        font-size: 33px!important;
+        line-height: 38px!important;
+    }
+
+    .LpOVerviewheader p span{
+        font-size: 33px!important;
+        line-height: 45px!important;
+    }
+    
+    .OverviewSection p {
+        font-size: 9px!important;
+    }
+
+
 
 }
 
+
+
+
+/* MOBILE */
 	@media only screen and (max-width: 768px) {
+
+        .slider-area {
+            overflow: hidden;
+        }
+
+		.pin-spacer{
+			width: 100vw!important;
+		}
 
 		.logoLoopMe{
 			width: 111px;	
@@ -324,8 +477,24 @@
 			left: 5%;
 		}
 
+        .topnav li.icon{
+            right: 5%!important;
+        }
+
 		.nav_option a{
-			font-size: 10px;
+            font-weight: 700!important;
+            font-size: 17px!important;
+            line-height: 36px!important;
+            /* identical to box height, or 212% */
+            
+            display: flex!important;
+            align-items: center!important;
+            text-align: center!important;
+            
+            color: #FFFFFF!important;
+            
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(20px);
 		}
 
 		.viewjobsbtn img{
@@ -341,44 +510,15 @@
 		}
 
 		canvas{
-			height: 46%;
+			height: auto!important;
+            width: 100%!important;
 		}
 
 		.MTTbuttons{
 			bottom: 28%;
 		}
 
-		
-
-
-
-
-
-
-
-
-
-}
-
-
-/* Built In This Size */
-@media only screen and (max-width: 1920px) {
-}
-
-
-/* Tablet Sizes */
-
-
-
-
-
-/* MOBILE */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	
-	/* Header */
-	
-		.topnav li.active {
+        .topnav li.active {
 			/* background-color: #04AA6D; */
 			/* color: white; */
 			position: absolute;
@@ -400,10 +540,512 @@
 			align-items: center;
 		
 		}
+
+        .topnav.responsive{
+            margin-top: 0%!important;
+            top: -47px!important;
+            width: 80%!important;
+            transition: 0.7s;
+        }
+
+        .topnav.responsive .icon #openclosebtn{
+            display: none;
+        }
+
+        .topnav .icon #closebtn{
+            display: none!important;
+        }
+
+        .topnav.responsive .icon #closebtn{
+            display: block!important;
+        }
+
+        .topnav.responsive .icon{
+            right: -4%!important;
+        }
+
+        .social-links{
+            display: none!important;
+        }
+
+        .topnav.responsive .nav_option{
+            width: 244px;
+            height: 60px;
+            background: linear-gradient(180deg, #FF362B 0%, #FF6868 100%);
+            border: 2px solid #FF8282;
+            border-radius: 36px;
+            margin-top: 5%;
+
+        }
+
+        .topnav.responsive li{
+            flex-grow: 0!important;
+        }
+
+        .viewjobsbtn{
+            position: initial!important;
+            width: 244px!important;
+            height: 60px!important;
+            margin-top: 20%!important;
+        }
+
+        .canvas-wrapper{
+            /* background-color: black; */
+        }
+
+        .LpOverview-area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Lp_Overview_slideshow-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            bottom: 10%!important;
+        }
+
+        .mySlidesOverview{
+            width: 69%;
+        }
+
+        .LpOVerviewheader p br{
+            display: none;
+        }
+
+        .LpOVerviewheader p span{
+            font-size: 40px!important;
+            line-height: 55px!important;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    
+        .LpOVerviewheader p{
+            font-size: 40px!important;
+            line-height: 55px!important;
+            text-align: center!important;
+        }
+    
+        .LpOverview-area .container{
+            padding: 0;
+            display: flex;
+            /* justify-content: center; */
+            width: 100%!important;
+        }
+    
+        .LpOVerviewheader{
+            /* width: 95%; */
+        }
+
+        .LpOverviewSections{
+            display: none!important;
+        }
+    
+        .LpOverviewSections_mobileGallery{
+            display: flex!important;
+        }
+    
+        .LpOverview-area .container{
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .textlpOverview{
+            font-size: 24px!important;
+            line-height: 38px!important;
+        }
+
+        .SlideShowImg_Overview{
+            width: 100px!important;
+        }
+
+		#carousel div.next{
+			display: none;
+		}
+
+		#carousel div.prev{
+			display: none;
+		}
+
+		#carousel div.selected{
+			width: 100%;
+		}
+
+		#carousel div img{
+			width: 70%!important;
+		}
+
+		.selected{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.MTTbuttons {
+			bottom: 4%!important;
+		}
+
+		.dotLpWe{
+			min-width: 30px!important;
+			min-height: 30px!important;
+
+			max-width: 31px!important;
+			max-height: 31px!important;
+		}
+
+		.dot_text{
+			font-size: 12px!important;
+			min-width: 150px;
+			line-height: 21px;
+		}
+
+		.LpWe_dots {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.LpWe_dots {
+			padding-bottom: 50%!important;
+		}
+		
+		.headerLpWe {
+			font-size: 32px!important;
+			line-height: 45px!important;
+		}
+
+		.lpWE-area{
+			display: flex;
+			width: 90%;
+			justify-content: center;
+		}
+
+		.mySlides{
+			width: 100%;
+			min-width: 50vw;
+			padding-bottom: 0px;
+		}
+
+		.textLpWe {
+			font-size: 12px;
+		}
+
+		.SlideShowImg {
+			width: 90%!important;
+		}
+
+		.benefits-SlideShowMainImg {
+			max-height: 95%!important;
+		}
+
+		/* Hiring */
+	
+	.hiring-area {
+		padding: 0;
+	}
+
+	.hiring_container {
+		border-radius: 24px!important;
+		padding: 28px!important;
+
+	}
+
+	#myUL .list_hiring {
+		height: 11vh!important;
+		flex-direction: column!important;
+		align-items: flex-start!important;
+		width: 95%!important;
+		padding-left: 4%!important;
+		padding-right: 4%!important;
+	}
+
+	.hiring_search_filter_container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0px!important;
+	}
+
+	.search{
+		width: 100%!important;
+		height: 70px;
+	}
+	
+	.filter {
+		flex-direction: row!important;
+		flex-wrap: wrap;
+		margin-top: 2px!important;
+	}
+
+	.filter > * {
+		margin-top: 3%!important;
+		margin-left: 0!important;
+	}
+
+	.filter_country_img {
+		margin-left: 4.5%!important;
+	}
+
+	.filter_country_img img {
+		max-width: 36px!important;
+		max-height: 36px!important;
+	}
+
+	.dropdown-container{
+		align-self:flex-end;
+	}
+
+	.dropdown-list-container{
+		width: 70%;
+	}
+
+	.dropdown-arrow{
+		height: 40px!important;
+	}
+
+	.dropdown-arrow svg{
+		height: 20px;
+	}
+
+	.main-button {
+		padding-right: 0px!important;
+		width: 100%!important; 
+		height: 40px!important;
+	}
+
+	.dropdown-button span, .dropdown-button svg{
+		font-size: 16px!important;
+		right: 0!important;
+		display: flex;
+    	align-items: center;
+	}
+
+	
+	.list_hiring{
+		/* display: none!important; */
+	}
+
+	.repo_tlt_pic {
+		/* display: non!importante; */
+		box-shadow: none!important;
+		display: none;
+	}
+
+	.repo-title {
+		width: 100%!important;
+		height: 33%!important;
+	}
+
+	.repo-title div {
+		background-color: transparent!important;
+		color: red!important;
+		width: 100%!important;
+		text-align: left!important;
 	}
 
 
+	.repo-city-state {
+		/* display: none; */
+		width: 100%!important;
+		order: 3!important;
+		font-size: 14px!important;
+		/* background-color: blue; */
+		border-top: 1px solid grey!important;
+		text-align: left!important;
+		padding-top: 5px!important;
+	}
+
+	.seperation_border{
+		display: none!important;
+	}
+
+	.repo-department {
+		font-size: 14px!important;
+		width: 14%!important;
+		text-align: left!important;
+		/* background-color: red; */
+		color: red!important;
+		order: 2!important;
+		position: relative!important;
+		top: 2%!important;
+		border: 0!important;
+		border-right: 2px solid red!important;
+		/* border-spacing: 20px; */
+		/* margin-right: 10px; */
+		height: 16px;
+		display: flex;
+		align-items: center;
+	}
+
+	.repo-employ-type {
+		/* display: none; */
+		font-size: 14px!important;
+		order: 2!important;
+		/* background-color: yellow; */
+		color: red!important;
+		position: relative!important;
+		top: -19%!important;
+		right: -29%!important;
+		width: auto!important;
+	}
+
+	.search{
+		height: 40px;
+	}
+
+
+
+	#inputSearch_img{
+		max-width: 42px;
+	}
+
+	li.dropdown-list-item{
+		height: 60px!important;
+	}
+
+	.allJobs{
+		padding-right: 12px!important;
+	}
+
+
+	/* Mobile Hiring */
+
+
+	.mobile_title{
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		display: flex;
+		align-items: center;
+		color: #ED1C24;
+	}
+
+	.mobile_section2{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		border-bottom: 0.1em solid #828282!important;
+		padding-bottom: 1px;
+	}
+
+	.mobile_section2>*{
+		height: 50%;
+	}
+
+	.mobile_city_state{
+		border-right: 1px solid red!important;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		color: #ED1C24;
+		padding-right: 9px;
+	}
+
+	.mobile_employmenttype{
+		font-weight: 400;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		color: #ED1C24;
+		padding-left: 9px;
+	}
+
+	.mobile_section3{
+		display: flex;
+		align-items: center;
+	}
+
+	.mobile_section3 div{	
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		color: #828282;
+		height: 40px;
+	}
+
+	.mobile_section3 div > *{
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+		border-right: 1px solid #828282;
+		padding-right: 9px;
+		height: 40%;
+	}
+
+	.mobile_section3 div:nth-child(3){
+		padding-left: 9px;
+		border: none!important;
+	}
+
+	.mobile_section3 div:nth-child(2){
+		padding-left: 9px;
+	}
+
+	.lp_footer {
+		height: 80vw!important ;
+	}
+
+
+
+	
+}
+
+
+/* Built In This Size */
+/* @media only screen and (max-width: 1920px) {
+} */
+
+
+/* Tablet Sizes */
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 768px) { */
+	
+	/* Header */
+	
+		/* .topnav li.active { */
+			/* background-color: #04AA6D; */
+			/* color: white; */
+			/* position: absolute; */
+			/* left: 0%; */
+		/* } */
+	
+	
+		/* .logoLoopMe { */
+			/* width: 110px; */
+		/* } */
+	
+		/* .slider-style-two { */
+			/* background-image: url(https://i.loopme.me/gwd/test/LP_website/img/bg/Mobile_HeroBackgroundCurved.png); */
+			/* padding: 110px 0 0px 0px; */
+			/* position: relative; */
+			/* z-index: 1; */
+			/* height: 100vh; */
+			/* display: flex; */
+			/* align-items: center; */
+		
+		/* } */
+	/* } */
+
+
 @media only screen and (max-width: 414px) {
+
+	.main_bg_1{
+		margin-top: 6%;
+	}
+
 
 	#header{
 		margin-top: 9%;
@@ -462,6 +1104,7 @@
 
 	.spaceBG{
 		background-position: top right!important;
+    	background-size: cover!important;
 	}
 
 	.wwloopers-bg{
@@ -493,6 +1136,15 @@
 		align-items: center;
 	}
 
+	.hero-section div{
+		display: flex;
+		justify-content: center;
+		width: 90%;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
 	.hero-section_content{
 		width: 90%;
 	}
@@ -518,15 +1170,15 @@
 	}
 
 	.LpOVerviewheader p span{
-		font-size: 31px!important;
-		line-height: 30px!important;
+		font-size: 33px!important;
+		line-height: 36px!important;
 		text-align: center;
 		margin-bottom: 6px;
 	}
 
 	.LpOVerviewheader p{
-		font-size: 31px!important;
-		line-height: 30px!important;
+		font-size: 25px!important;
+		line-height: 36px!important;
 		text-align: center!important;
 	}
 
@@ -539,14 +1191,26 @@
 
 	.LpOVerviewheader{
 		/* width: 95%; */
+		/* line-height: 20px; */
+	}
+
+	.SlideShowImg_Overview{
+		width: 60px!important;
+	}
+
+	.Lp_Overview_slideshow-container{
+		/* bottom: 0%!important;  */
 	}
 
 	.main_bg_1 .pt-115{
-		padding-top: 70px!important;
+		padding-top: 25px!important;
+		width: 90%;
+		margin-left: 5%;
+    	margin-right: 5%;
 	}
 
 	.main_bg_1 .pb-90{
-		padding-bottom: 20px!important;
+		/* padding-bottom: 20px!important; */
 	}
 
 	.LpOverviewSections{
@@ -562,6 +1226,11 @@
 		height: 100%;
 	}
 
+	.textlpOverview{
+		font-size: 12px!important;
+		line-height: 27px!important;
+	}
+
 	#carousel div.next{
 		display: none;
 	}
@@ -572,6 +1241,7 @@
 
 	#carousel div.selected{
 		width: 90%;
+		transform: translateY(-29px) translateX(-50%);
 	}
 
 	.dotLpMTTP{
@@ -583,9 +1253,26 @@
 		align-items: center;
 	}
 
+	#carousel div img {
+		width: 90%!important;
+	}
+
+	.meet-the-team-area{
+		padding-top: 80px!important;
+	}
+
+	.meet-the-team-area .row{
+		height: 20%;
+	}
+
 	.MTTbuttons{
 		bottom: 10%!important;
 	}
+
+	.dotLpMTT{
+		margin: 9px;
+	}
+
 
 	.slideshow-container{
 		width: 100%!important;
@@ -596,6 +1283,11 @@
 		/* flex-direction: column; */
 		width: 100%!important;
 		justify-content: flex-start!important;
+		top: -5%;
+	}
+
+	.benefits-SlideShowMainImg {
+		max-height: 78%!important;
 	}
 
 	.lpWE-area{
@@ -606,7 +1298,6 @@
 		font-size: 33px!important;
 		margin-bottom: 0%!important;
 		line-height: 41px!important;
-		
 	}
 
 	.textLpWe{
@@ -626,16 +1317,31 @@
     	display: flex;
 		width: 100%;
 		justify-content: center;
-		margin-top: 0%!important;
+		margin-top: 0px!important;
+		position: absolute;
+		top: 94%;
+		padding-bottom: 0%!important;
+	}
+
+	.dotLpMTT{
+		margin: 9px!important;
 	}
 
 	.dotLpWe{
 		width: 16px!important;
 		height: 16px!important;
+		min-width: 16px!important;
+    	min-height: 16px!important;
+    	max-width: 16px!important;
+    	max-height: 16px!important;
+	}
+
+	.textLpWe{
+		width: 100%;
 	}
 
 	.SlideShowImg{
-		/* width: 90%!important; */
+		width: 60%!important;
 	}
 
 	.main_bg_4 .pt-115{
@@ -943,19 +1649,80 @@
 		background-color: #e8e7e8;
 	}
 
-	.viewjobsbtn{
-		display: none!important;
+
+
+
+
+
+  /* MOBILE */
+  @media screen and (max-width: 768px) {
+	.topnav li:not(:first-child) {display: none;}
+	.topnav li.icon {
+	  float: right;
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	}
+
+	.logoRemove{
+		display: none !important;
+	  }
+  }
+  
+  @media screen and (max-width: 768px) {
+	.topnav.responsive {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		height: 90vh;
+		top: 0;
+		margin-top: 7%;
+		background: rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(8px);
+		border-radius: 16px;
 	}
 
 
+	.topnav.responsive .icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  width: 15%;
+	}
+	.topnav.responsive li {
+	  float: none;
+	  display: flex;
+	  text-align: left;
+	  width: 100%;
+	  flex-grow: 1;
+	  text-align: center;
+	  align-items: center;
+	  justify-content: center;
+	}
+  }
 
 
 
+  /* Our Values */
+  @media (min-width: 768px) {
+	.hero-section_content {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
 	
-
-
-
-
+	.section-content {
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+	.block-2,
+	.block-3,
+	.block-5,
+	.block-6 {
+	  grid-column: span 6;
+	}
+  }
 
 
 	

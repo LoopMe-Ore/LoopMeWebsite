@@ -19,8 +19,6 @@ import './assets/css/magnific-popup.css';
 
 import HomeTwo from './pages/homes/HomeTwo';
 
-import createScrollSnap from 'scroll-snap'
-
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 

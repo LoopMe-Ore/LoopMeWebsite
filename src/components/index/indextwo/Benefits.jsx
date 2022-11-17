@@ -49,9 +49,9 @@ function Benefits({aboutRef={aboutRef}, initiativesRef={initiativesRef}, benefit
 
   return (
 
-	<section ref={benefitsRef} className="benefits-area position-relative pt-115 pb-90 blkBg">
+	<section ref={benefitsRef} className="benefits-area position-relative blkBg">
 
-		<div className="benefits-bg" />
+		{/* <div className="benefits-bg" /> */}
 			<div className="container">
 
 				<div className="row justify-content-center">

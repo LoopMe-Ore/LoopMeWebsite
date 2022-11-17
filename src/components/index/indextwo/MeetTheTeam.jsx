@@ -160,7 +160,7 @@ function MeetTheTeam() {
   
   return (
 
-	<section className="meet-the-team-area position-relative pt-115 pb-90 blkBg">
+	<section className="meet-the-team-area position-relative blkBg">
 
 				<div className="row justify-content-center marginRmv">
 					<div className="col-xl-6 col-lg-8">

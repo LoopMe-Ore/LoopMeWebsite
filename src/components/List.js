@@ -128,6 +128,8 @@ const List = (props) => {
 
   }
 
+
+
   return (
     
     <ul id="myUL">
@@ -206,7 +208,7 @@ const List = (props) => {
         <div className='allJobs' id='idAllJobs'>
             
         {(() => {
-          if (window.matchMedia("(max-width: 414px)").matches) {
+          if (window.matchMedia("(max-width: 768px)").matches) {
 
             return(
 
